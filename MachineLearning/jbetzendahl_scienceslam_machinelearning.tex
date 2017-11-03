@@ -1,5 +1,6 @@
-\documentclass[aspectratio=43]{beamer}
+\documentclass[aspectratio=43,x11names]{beamer}
 \usetheme{Pittsburgh}
+\usepackage{xcolor}
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{amsmath}
@@ -9,9 +10,6 @@
 \usepackage{multicol}
 \usepackage{wrapfig}
 \usepackage{hyperref}
-\usepackage{minted}
-\usepackage{lmodern}
-\usepackage{color}
 
 \author{Jonas Betzendahl}
 \title{Machine Learning Science Slam}
@@ -374,6 +372,26 @@ in der Datengrundlage und im Modell\\verstärken oder verschlimmern.
 
 \begin{frame}
 \frametitle{Zusammenfassung}
+
+Die guten Nachrichten:
+
+\begin{itemize}
+\color{Green4}
+\pause\item Roboterapokalypse: Erstmal unwahrscheinlich
+\pause\item Maschinelles Lernen kann uns das Leben sehr vereinfachen
+\end{itemize}
+\bigskip
+
+Aber:
+
+\begin{itemize}
+\color{Firebrick1}
+\pause\item Maschinelles Lernen ist nicht fehlerfrei
+\pause\item Meist nur ein Ergebnis, keine Begründung
+\pause\item Vorsicht vor Vorurteilen in der Datengrundlage
+\pause\item Kritische Entscheidungen brauchen Menschen in der Schleife
+\end{itemize}
+
 \end{frame}
 
 \end{document}
