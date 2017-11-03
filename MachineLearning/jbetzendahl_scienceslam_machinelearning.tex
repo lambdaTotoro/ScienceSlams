@@ -1,0 +1,379 @@
+\documentclass[aspectratio=43]{beamer}
+\usetheme{Pittsburgh}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{lmodern}
+\usepackage{color}
+
+\author{Jonas Betzendahl}
+\title{Machine Learning Science Slam}
+
+\beamertemplatenavigationsymbolsempty 
+
+% For Footnotes without markers on the slide
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\begin{document}
+
+%------------------------------------------------------------------------------------
+\section{Introduction}
+
+\begin{frame}
+\begin{center}
+\Large \glqq Maschinelles Lernen\grqq
+\normalsize 
+
+(Und warum das vielleicht gruseliger ist, als es klingt)
+\bigskip\bigskip
+
+\Large Jonas Betzendahl\\
+\texttt{@jbetzend}
+\smallskip
+
+\href{https://twitter.com/jbetzend}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
+\href{https://github.com/jbetzend}{\includegraphics[scale=0.125]{images/github_logo.png}}
+\href{https://whispeer.de/en/user/jbetzend}{\includegraphics[scale=0.125]{images/whispeer_logo.png}}
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Wer bin ich?}
+
+Jonas Betzendahl\\
+Masterstudiengang \glqq Intelligente Systeme\grqq\\
+Technische Fakultät, Universität Bielefeld\\
+\texttt{jonas.betzendahl@gmail.com}
+\smallskip\smallskip
+
+\begin{center}
+\includegraphics[scale=0.5]{images/thermopostkarte.jpg} 
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Small Talk in Intelligent Systems}
+
+\begin{multicols}{2}
+
+Die häufigste Frage an meinen Studiengang:
+
+\pause
+
+\begin{itemize}
+\item \glqq Na, wie lange dauert es noch bis zur Roboterapokalypse?\grqq
+\end{itemize}
+
+\columnbreak
+
+\includegraphics[height=0.7\textheight,keepaspectratio]{images/Robot-Apocalypse.jpg} 
+
+\end{multicols}
+
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[width=\textwidth]{images/amazon-logo.jpg} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[width=\textwidth]{images/amazon-one-wallet.jpg} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[width=\textwidth]{images/amazon-buncha-wallets.jpg} 
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\begin{frame}
+
+\begin{center}
+\dots zumindest habe ich bisher so immer meine Slams angefangen.
+\pause\bigskip
+
+Wir müssen reden!
+\end{center}
+
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\section{Was ist Maschinelles Lernen?}
+
+\begin{frame}
+\begin{center}
+\huge
+Wie funktioniert\\Maschinelles Lernen?
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{multicols}{2}
+\includegraphics[scale=0.4]{images/artificial-intelligence-507813_640.jpg} 
+\columnbreak
+
+Maschinelles Lernen simuliert einen Vorgang nicht unähnlich dem im menschlichen Gehirn selbst.
+\pause\bigskip
+
+Ein (künstliches) \emph{neuronales Netz} wird simuliert und trainiert mit \emph{Testdaten}, bis es akzeptable Leistungen bringt.
+\end{multicols}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.375]{images/simple_neural_network_header.jpg} 
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\section{Die Vorteile von Maschinellem Lernen}
+
+\begin{frame}
+\begin{center}
+\huge
+Die Errungenschaften\\von Maschinellem Lernen
+\end{center}
+\end{frame}
+
+\begin{frame}
+Maschinelles Lernen ist prinzipiell sehr mächtig und nützlich\dots
+
+\begin{center}
+\includegraphics[scale=0.105]{images/autopilotnew.jpg} 
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\small
+\begin{verbatim}
+ "Nachdem die Menschheit Jahrtausende damit verbracht
+  hat, ihre Taktiken zu verbessern, erzählen uns die
+  Computer, dass wir komplett daneben liegen.
+  Ich würde soweit gehen, zu sagen, dass noch kein 
+  einziger Mensch auch nur den Rand der Wahrheit von
+  Go berührt hat."
+                                             -- Ke Jie
+\end{verbatim}
+
+\begin{center}
+\includegraphics[scale=0.65]{images/kejie.png} 
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\section{Die Probleme}
+
+\begin{frame}
+\begin{center}
+\Large
+Die Fehler von\\Maschinellem Lernen
+\end{center}
+\end{frame}
+
+\begin{frame}
+
+\begin{multicols}{2}
+
+\includegraphics[scale=0.1]{images/sirifail.jpg} 
+
+\columnbreak
+
+ffoo
+\end{multicols}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_1.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_2.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_3.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_4.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=0.39\textwidth,keepaspectratio]{images/recog_panda.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=0.39\textwidth,keepaspectratio]{images/recog_gibbon.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wat lernt misch datt?}
+\begin{center}
+\color{red}
+\large
+Maschinelles Lernen liefert oft\\nur \emph{Ergebnisse}, keine \emph{Begründungen}.
+\pause\bigskip
+
+Außerdem ist das Ergebnis höchstens\\so allgemein wie die Trainingsdaten.
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\subsection{Adversarial Images}
+\begin{frame}
+\begin{center}
+\huge
+\glqq Adversarial Objects\grqq \\
+\Large
+(Feindliche Objekte)
+\end{center}
+\bigskip
+\normalsize
+
+(\textit{Subs., plural}) Objekte, die für das menschliche Auge herkömmlich erscheinen,
+aber für den Computer radikal anders aussehen.
+\end{frame}
+
+\begin{frame}
+\includegraphics[scale=0.5]{images/cat_adversarial.png} 
+\end{frame}
+
+\begin{frame}
+\includegraphics[scale=0.5]{images/cat_rotated.png} 
+\end{frame}
+
+\begin{frame}
+
+Feindliche 3D-gedruckte Schildkröte:
+\bigskip
+
+\includegraphics[scale=0.5]{images/rifle_turtle.jpg} 
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\begin{frame}
+Ein paar offensichtliche Probleme:
+\bigskip
+\begin{multicols}{2}
+\begin{itemize}
+\pause\item Gratis T-Shirts die am Flughafen als Waffen erkannt werden
+\pause\item Plakate neben der Autobahn die als Stoppschilder erkannt werden
+\pause\item Lars
+\item \dots
+\end{itemize}
+\columnbreak
+\pause
+\includegraphics[scale=0.5]{images/lars_eisbaer.png} 
+\end{multicols}
+\end{frame}
+
+\begin{frame}
+Ein paar offensichtliche Probleme:
+\bigskip
+\begin{multicols}{2}
+\begin{itemize}
+\item Gratis T-Shirts die am Flughafen als Waffen erkannt werden
+\item Plakate neben der Autobahn die als Stoppschilder erkannt werden
+\item Lars
+\item \dots
+\end{itemize}
+\columnbreak
+\includegraphics[scale=0.45]{images/lars_sweden.jpg} 
+\end{multicols}
+\end{frame}
+
+\begin{frame}
+Ein paar offensichtliche Probleme:
+\bigskip
+\begin{multicols}{2}
+\begin{itemize}
+\item Gratis T-Shirts die am Flughafen als Waffen erkannt werden
+\item Plakate neben der Autobahn die als Stoppschilder erkannt werden
+\item LARs
+\item \dots
+\end{itemize}
+\columnbreak
+\includegraphics[scale=0.275]{images/lars.jpg} 
+\end{multicols}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wat lernt misch datt?}
+\begin{center}
+\color{red}
+\large
+Maschinelles Lernen ist nicht unfehlbar und darf in kritischen Systemen nie 
+unüberprüft wichtige Entscheidungen treffen.
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\section{Menschliche Leichtgläubigkeit}
+
+\begin{frame}
+\frametitle{}
+Fallbeispiel: \glqq Predictive Policing\grqq
+
+\begin{center}
+\includegraphics[scale=0.25]{images/predictive_policing.jpg} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wat lernt misch datt?}
+\begin{center}
+\color{red}
+\large
+Maschinelles Lernen kann (potentiell) Vorurteile\\und Fehler
+in der Datengrundlage und im Modell\\verstärken oder verschlimmern.
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Zusammenfassung}
+\end{frame}
+
+\end{document}
