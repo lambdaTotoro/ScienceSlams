@@ -1,4 +1,4 @@
-\documentclass[aspectratio=43,x11names]{beamer}
+\documentclass[aspectratio=169,x11names]{beamer}
 \usetheme{Pittsburgh}
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
@@ -51,17 +51,26 @@
 %------------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Wer bin ich?}
+\frametitle{Was mache ich?}
 
-Jonas Betzendahl\\
-Masterstudiengang \glqq Intelligente Systeme\grqq\\
-Technische Fakultät, Universität Bielefeld\\
-\texttt{jonas.betzendahl@gmail.com}
-\smallskip\smallskip
+\begin{multicols}{2}
 
 \begin{center}
-\includegraphics[scale=0.5]{images/thermopostkarte.jpg} 
+\includegraphics[scale=0.45]{images/thermopostkarte.jpg} 
 \end{center}
+
+\columnbreak
+
+\textit{Früher:}\\
+B. Sc.  \glqq Kognitive Informatik\grqq\\
+M. Sc.  \glqq Intelligente Systeme\grqq\\
+Technische Fakultät, Universität Bielefeld\\
+\medskip
+
+\textit{Heute:}\\
+Doktorand der Informatik\\
+Technische Fakultät, FAU Erlangen
+\end{multicols}
 \end{frame}
 
 %------------------------------------------------------------------------------------
@@ -75,13 +84,15 @@ Die häufigste Frage an meinen Studiengang:
 
 \pause
 
-\begin{itemize}
-\item \glqq Na, wie lange dauert es noch bis zur Roboterapokalypse?\grqq
-\end{itemize}
+\begin{center}
+\glqq Na, wie lange dauert\\ es noch bis zur\\ Roboterapokalypse?\grqq
+\end{center}
 
 \columnbreak
 
-\includegraphics[height=0.7\textheight,keepaspectratio]{images/Robot-Apocalypse.jpg} 
+\begin{center}
+\includegraphics[height=0.7\textheight,keepaspectratio]{images/mtt.png} 
+\end{center}
 
 \end{multicols}
 
@@ -118,6 +129,40 @@ Wir müssen reden!
 
 \end{frame}
 
+\section{Die Vorteile von Maschinellem Lernen}
+
+\begin{frame}
+\begin{center}
+\huge
+Die Errungenschaften\\von Maschinellem Lernen
+\end{center}
+\end{frame}
+
+\begin{frame}
+
+\begin{center}
+Maschinelles Lernen ist prinzipiell sehr mächtig und nützlich\dots
+\end{center}
+
+\begin{center}
+\includegraphics[width=.9\textwidth]{images/autopilotnew.jpg} 
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\small
+\begin{verbatim}
+           "Nachdem die Menschheit Jahrtausende damit verbracht
+            hat, ihre Taktiken zu verbessern, erzählen uns die
+            Computer, dass wir komplett daneben liegen."
+                                                      -- Ke Jie
+\end{verbatim}
+
+\begin{center}
+\includegraphics[scale=0.65]{images/kejie.png} 
+\end{center}
+\end{frame}
+
 %------------------------------------------------------------------------------------
 
 \section{Was ist Maschinelles Lernen?}
@@ -143,45 +188,17 @@ Ein (künstliches) \emph{neuronales Netz} wird simuliert und trainiert mit \emph
 
 \begin{frame}
 \begin{center}
-\includegraphics[scale=0.375]{images/simple_neural_network_header.jpg} 
+\includegraphics[width=\textwidth]{images/simple_neural_network_header.jpg} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[width=\textwidth]{images/simple_neural_network_header_FW.jpg} 
 \end{center}
 \end{frame}
 
 %------------------------------------------------------------------------------------
-
-\section{Die Vorteile von Maschinellem Lernen}
-
-\begin{frame}
-\begin{center}
-\huge
-Die Errungenschaften\\von Maschinellem Lernen
-\end{center}
-\end{frame}
-
-\begin{frame}
-Maschinelles Lernen ist prinzipiell sehr mächtig und nützlich\dots
-
-\begin{center}
-\includegraphics[scale=0.105]{images/autopilotnew.jpg} 
-\end{center}
-\end{frame}
-
-\begin{frame}[fragile]
-\small
-\begin{verbatim}
- "Nachdem die Menschheit Jahrtausende damit verbracht
-  hat, ihre Taktiken zu verbessern, erzählen uns die
-  Computer, dass wir komplett daneben liegen.
-  Ich würde soweit gehen, zu sagen, dass noch kein 
-  einziger Mensch auch nur den Rand der Wahrheit von
-  Go berührt hat."
-                                             -- Ke Jie
-\end{verbatim}
-
-\begin{center}
-\includegraphics[scale=0.65]{images/kejie.png} 
-\end{center}
-\end{frame}
 
 %------------------------------------------------------------------------------------
 
@@ -189,7 +206,7 @@ Maschinelles Lernen ist prinzipiell sehr mächtig und nützlich\dots
 
 \begin{frame}
 \begin{center}
-\Large
+\huge
 Die Fehler von\\Maschinellem Lernen
 \end{center}
 \end{frame}
@@ -202,7 +219,10 @@ Die Fehler von\\Maschinellem Lernen
 
 \columnbreak
 
-ffoo
+Maschinelles Lernen ist\\(genau wie menschliches) alles andere als fehlerfrei!
+\bigskip
+
+Computer haben noch einen langen Weg, bis sie z.B. Sprache so gut verstehen wie Menschen.
 \end{multicols}
 \end{frame}
 
@@ -232,13 +252,13 @@ ffoo
 
 \begin{frame}
 \begin{center}
-\includegraphics[height=0.39\textwidth,keepaspectratio]{images/recog_panda.png} 
+\includegraphics[width=\textwidth,keepaspectratio]{images/recog_panda.png} 
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\includegraphics[height=0.39\textwidth,keepaspectratio]{images/recog_gibbon.png} 
+\includegraphics[width=\textwidth, keepaspectratio]{images/recog_gibbon.png} 
 \end{center}
 \end{frame}
 
@@ -272,19 +292,26 @@ aber für den Computer radikal anders aussehen.
 \end{frame}
 
 \begin{frame}
-\includegraphics[scale=0.5]{images/cat_adversarial.png} 
+\begin{center}
+\includegraphics[height=\textheight]{images/cat_adversarial.png} 
+\end{center}
 \end{frame}
 
 \begin{frame}
-\includegraphics[scale=0.5]{images/cat_rotated.png} 
+\begin{center}
+\includegraphics[height=\textheight]{images/cat_rotated.png} 
+\end{center}
 \end{frame}
 
 \begin{frame}
 
+\begin{center}
 Feindliche 3D-gedruckte Schildkröte:
-\bigskip
+\end{center}
 
-\includegraphics[scale=0.5]{images/rifle_turtle.jpg} 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/rifle_turtle.jpg} 
+\end{center}
 \end{frame}
 
 %------------------------------------------------------------------------------------
@@ -296,27 +323,15 @@ Ein paar offensichtliche Probleme:
 \begin{itemize}
 \pause\item Gratis T-Shirts die am Flughafen als Waffen erkannt werden
 \pause\item Plakate neben der Autobahn die als Stoppschilder erkannt werden
-\pause\item Lars
+\pause\item Lars\pause
 \item \dots
 \end{itemize}
 \columnbreak
-\pause
-\includegraphics[scale=0.5]{images/lars_eisbaer.png} 
-\end{multicols}
-\end{frame}
 
-\begin{frame}
-Ein paar offensichtliche Probleme:
-\bigskip
-\begin{multicols}{2}
-\begin{itemize}
-\item Gratis T-Shirts die am Flughafen als Waffen erkannt werden
-\item Plakate neben der Autobahn die als Stoppschilder erkannt werden
-\item Lars
-\item \dots
-\end{itemize}
-\columnbreak
-\includegraphics[scale=0.45]{images/lars_sweden.jpg} 
+\begin{center}
+\includegraphics[scale=0.25]{images/lars_eisbaer.png} 
+\end{center}
+
 \end{multicols}
 \end{frame}
 
@@ -331,7 +346,11 @@ Ein paar offensichtliche Probleme:
 \item \dots
 \end{itemize}
 \columnbreak
-\includegraphics[scale=0.275]{images/lars.jpg} 
+
+\begin{center}
+\includegraphics[scale=0.25]{images/lars.jpg} 
+\end{center}
+
 \end{multicols}
 \end{frame}
 
@@ -347,26 +366,26 @@ unüberprüft wichtige Entscheidungen treffen.
 
 %------------------------------------------------------------------------------------
 
-\section{Menschliche Leichtgläubigkeit}
+%\section{Menschliche Leichtgläubigkeit}
 
-\begin{frame}
-\frametitle{}
-Fallbeispiel: \glqq Predictive Policing\grqq
+%\begin{frame}
+%\frametitle{}
+%Fallbeispiel: \glqq Predictive Policing\grqq
 
-\begin{center}
-\includegraphics[scale=0.25]{images/predictive_policing.jpg} 
-\end{center}
-\end{frame}
+%\begin{center}
+%\includegraphics[scale=0.25]{images/predictive_policing.jpg} 
+%\end{center}
+%\end{frame}
 
-\begin{frame}
-\frametitle{Wat lernt misch datt?}
-\begin{center}
-\color{red}
-\large
-Maschinelles Lernen kann (potentiell) Vorurteile\\und Fehler
-in der Datengrundlage und im Modell\\verstärken oder verschlimmern.
-\end{center}
-\end{frame}
+%\begin{frame}
+%\frametitle{Wat lernt misch datt?}
+%\begin{center}
+%\color{red}
+%\large
+%Maschinelles Lernen kann (potentiell) Vorurteile\\und Fehler
+%in der Datengrundlage und im Modell\\verstärken oder verschlimmern.
+%\end{center}
+%\end{frame}
 
 %------------------------------------------------------------------------------------
 
@@ -393,5 +412,4 @@ Aber:
 \end{itemize}
 
 \end{frame}
-
 \end{document}
