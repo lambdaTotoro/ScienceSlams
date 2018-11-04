@@ -1,0 +1,161 @@
+\documentclass[aspectratio=169,x11names]{beamer}
+\usetheme{Pittsburgh}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\author{Jonas Betzendahl}
+\title{Blockchain Science Slam}
+
+\beamertemplatenavigationsymbolsempty 
+
+% For Footnotes without markers on the slide
+% https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+%src: https://tex.stackexchange.com/questions/34921/how-to-overlap-images-in-a-beamer-slide
+\def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
+
+\begin{document}
+
+%------------------------------------------------------------------------------------
+\section{Introduction}
+
+\begin{frame}
+\begin{center}
+\Large \glqq Blockchain\grqq
+\normalsize 
+
+(Ein kurzer Input zum neuesten Hype)
+\bigskip\bigskip
+
+\Large Jonas Betzendahl\\
+\texttt{@jbetzend}
+\smallskip
+
+\href{https://twitter.com/jbetzend}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
+\href{https://github.com/jbetzend}{\includegraphics[scale=0.125]{images/github_logo.png}}
+\href{https://whispeer.de/en/user/jbetzend}{\includegraphics[scale=0.125]{images/whispeer_logo.png}}
+\end{center}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Blockchain: The Hype is Real!}
+
+\pause \Put(100,-150){\includegraphics[scale=0.65]{images/spahn}}
+\pause \Put(100,-100){\includegraphics[scale=1]{images/saftladen}}
+\pause \Put(0,-100){\includegraphics[scale=0.7]{images/exponential}}
+ \Put(250,-100){\includegraphics[scale=0.4]{images/bitcoin_gold}}
+\pause \Put(30,80){\includegraphics[scale=1]{images/funding}}
+
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Wie funktioniert so eine \glqq Blockchain\grqq ?}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Wann macht Blockchain Sinn?}
+
+Eine Blockchain kommt unter Umständen in Frage, wenn ein Problem vorliegt, dass\dots
+\bigskip
+
+\begin{itemize}
+\pause\item aus \emph{Transaktionen} besteht,
+\pause\item diese eine \emph{totale Ordnung} brauchen,
+\pause\item kein \emph{Vertrauen} zwischen Akteuren zulässt,
+\pause\item nicht notwendigerweise gut \emph{skalieren} muss 
+\end{itemize}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Probleme (1): Vertrauen}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Probleme (2): Skalierung}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Probleme (3): You're doing it wrong!}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Brauche ich eine Blockchain?}
+\pause
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+    
+\begin{center}
+\begin{tikzpicture}[ auto]
+    % Place nodes
+    \node [block, fill=green!40, minimum height=2cm, minimum width=3cm] (need) {Brauche ich eine\\ Blockchain?};
+    \node [decision, right of=need,yshift=-0.5cm] (decideOne) {Trans-\\ aktional?};
+    \node [decision, right of=decideOne, minimum height=2.35cm, minimum width=2.35cm, yshift=-1cm] (decideTwo) {Kein\\ Vertrauen?};
+    \node [decision, right of=decideTwo, minimum height=2.35cm, minimum width=2.35cm, yshift=-2cm] (decideThree) {Skalierung\\ egal?};
+    \node [block, below of=decideOne, fill=red!50, yshift=-2cm] (no) {Keine Blockchain!};
+    \node [block, fill=red!25, above of=decideThree, minimum width=3cm, yshift=2.5cm] (stop) {Vielleicht\\ Blockchain?};
+    % Draw edges
+    \path [line] (need) -- (decideOne);
+    \path [line] (decideOne) -- node {Nein} (no);
+    \path [line] (decideTwo) -- node {Nein} (no);
+    \path [line] (decideThree) -- node {Nein} (no);
+    \path [line] (decideTwo) -- node {Ja} (decideThree);
+    \path [line] (decideThree) -- node {Ja} (stop);
+    \path [line] (decideOne) -- node [near start] {Ja} (decideTwo);
+\end{tikzpicture}
+\end{center}
+
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+
+\begin{frame}[fragile]
+\begin{multicols}{2}
+
+\vspace*{60pt}
+\includegraphics[scale=0.6]{images/Happy-Thumbs-Up-Robot.png} 
+
+\columnbreak
+
+\vspace*{60pt}
+
+\Huge
+\hspace*{-30pt}Vielen Dank für die\\ \hspace*{-20pt} Aufmerksamkeit!
+\end{multicols}
+\end{frame}
+
+\end{document}
+
