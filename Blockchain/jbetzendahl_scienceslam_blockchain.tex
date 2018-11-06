@@ -11,7 +11,7 @@
 \usepackage{wrapfig}
 \usepackage{hyperref}
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes,arrows,automata,positioning}
 
 \author{Jonas Betzendahl}
 \title{Blockchain Science Slam}
@@ -57,19 +57,71 @@
 
 \begin{frame}
 \frametitle{Blockchain: The Hype is Real!}
-
-\pause \Put(100,-150){\includegraphics[scale=0.65]{images/spahn}}
-\pause \Put(100,-100){\includegraphics[scale=1]{images/saftladen}}
-\pause \Put(0,-100){\includegraphics[scale=0.7]{images/exponential}}
+ \Put(0,-100){\includegraphics[scale=0.7]{images/exponential}}
  \Put(250,-100){\includegraphics[scale=0.4]{images/bitcoin_gold}}
+ \pause \Put(100,-100){\includegraphics[scale=1]{images/saftladen}}
 \pause \Put(30,80){\includegraphics[scale=1]{images/funding}}
+\pause \Put(100,-150){\includegraphics[scale=0.65]{images/spahn}}
 
 \end{frame}
 
 %--------------------------------------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Wie funktioniert so eine \glqq Blockchain\grqq ?}
+\frametitle{Wie funktioniert so eine \glqq Blockchain\grqq ? (1)}
+
+\tikzstyle{miner} = [rectangle, draw, fill=gray!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+
+    \begin{center}
+
+\begin{multicols}{2}
+\hspace*{40pt}
+    \begin{tikzpicture}[font=\sffamily]
+        % Setup the style for the states
+        \tikzset{node style/.style={state, 
+                                    minimum width=1.5cm,
+                                    line width=1mm,
+                                    fill=gray!20!white}}
+ 
+        % Draw the states
+        \node[node style] at (0, 0)     (bull)     {$P_1$};
+        \node[node style] at (5, 0)     (bear)     {$P_2$};
+        \node[node style] at (2.5, -4.2) (stagnant) {$P_3$};
+ 
+        % Connect the states with arrows
+        \draw[every loop,
+              auto=right,
+              line width=1mm,
+              >=latex,
+              draw=orange,
+              fill=orange]
+            (bull)     edge[bend right=20]            node {} (stagnant)
+            (bull)     edge[bend right=20, auto=left] node {} (bear)
+            (bear)     edge[bend right=20]            node {} (bull)
+            (bear)     edge[bend right=20, auto=left] node {} (stagnant)
+            (stagnant) edge[bend right=20]            node {} (bear)
+            (stagnant) edge[bend right=20, auto=left] node {} (bull);
+\end{tikzpicture}
+\columnbreak
+\pause
+\begin{tikzpicture}
+\node [miner, minimum height=1.5cm, yshift=-0.5cm, minimum width=2cm] (m1) {Miner$_1$};
+\node [miner, below of=m1, yshift=-1.5cm, minimum height=1.5cm, minimum width=2cm] (m2) {Miner$_2$};
+\node [miner, below of=m2, yshift=-1.5cm, minimum height=1.5cm, minimum width=2cm] (m3) {Miner$_3$};
+\end{tikzpicture}
+
+\end{multicols}  
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Wie funktioniert so eine \glqq Blockchain\grqq ? (2)}
+\begin{center}
+\includegraphics[scale=2]{images/BlockChain_D.png} 
+\end{center}
 \end{frame}
 
 %--------------------------------------------------------------------------------------------------------------
@@ -92,25 +144,43 @@ Eine Blockchain kommt unter Umständen in Frage, wenn ein Problem vorliegt, dass
 
 \begin{frame}
 \frametitle{Probleme (1): Vertrauen}
+Das Protokoll braucht kein Vertrauen, andere schon\dots\pause 
+\bigskip\bigskip
+
+\begin{center}
+\includegraphics[scale=1]{images/mtgox.png} \qquad\qquad
+\includegraphics[scale=0.15]{images/DAO-logo.png} 
+\end{center}
 \end{frame}
 
 %--------------------------------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Probleme (2): Skalierung}
+Mining wird immer teurer\dots\pause
+
+\begin{center}
+\includegraphics[scale=2]{images/ireland.png} 
+\pause \Put(-275,120){\includegraphics[scale=2]{images/mining_gold.png}}
+\pause \Put(-275,120){\includegraphics[scale=1.5]{images/co2.png}}
+\end{center}
 \end{frame}
 
 %--------------------------------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Probleme (3): You're doing it wrong!}
+
+\begin{center}
+\includegraphics[scale=0.25]{images/consent_apps.png} 
+\end{center}
+\pause \Put(75,250){\includegraphics[scale=2]{images/launchdate.png}}
 \end{frame}
 
 %--------------------------------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Brauche ich eine Blockchain?}
-\pause
 % Define block styles
 \tikzstyle{decision} = [diamond, draw, fill=blue!20, 
     text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
