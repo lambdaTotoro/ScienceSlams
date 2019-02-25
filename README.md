@@ -11,9 +11,12 @@ Since this repo started, I've been to these slams:
 - 2018-06-19 -- Munich
 - 2018-08-29 -- Hamburg (OTTO)
 - 2018-09-12 -- Berlin (Planetarium)
+- 2018-12-12 -- Hamburg
+- 2019-02-17 -- Mannheim
+- 2019-02-19 -- München (Montage)
 
 ## Upcoming Slams
 
 I will be in these cities on these dates:
 
-- 2018-12-12 -- Hamburg
+// no set dates, currently.
