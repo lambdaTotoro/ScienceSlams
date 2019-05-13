@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169,x11names]{beamer}
+\documentclass[aspectratio=43,x11names]{beamer}
 \usetheme{Pittsburgh}
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
@@ -32,46 +32,24 @@
 
 \begin{frame}
 \begin{center}
+\vfill
 \Large \glqq Maschinelles Lernen\grqq
 \normalsize 
 
 (Und warum das vielleicht gruseliger ist, als es klingt)
-\bigskip\bigskip
-
-\Large Jonas Betzendahl\\
-\texttt{@lambdaTotoro}
-\smallskip
-
-\href{https://twitter.com/lambdatotoro}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
-\href{https://github.com/jbetzend}{\includegraphics[scale=0.125]{images/github_logo.png}}
-\href{https://whispeer.de/en/user/jbetzend}{\includegraphics[scale=0.125]{images/whispeer_logo.png}}
-\end{center}
-\end{frame}
-
-%------------------------------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Was mache ich?}
-
-\begin{multicols}{2}
-
-\begin{center}
-\includegraphics[scale=0.45]{images/thermopostkarte.jpg} 
-\end{center}
-
-\columnbreak
-
-\textit{Früher:}\\
-B. Sc.  \glqq Kognitive Informatik\grqq\\
-M. Sc.  \glqq Intelligente Systeme\grqq\\
-Technische Fakultät, Universität Bielefeld\\
 \medskip
 
-\textit{Heute:}\\
-Doktorand der Informatik\\
-Technische Fakultät, FAU Erlangen
-\end{multicols}
+\Large Jonas Betzendahl
+\bigskip\bigskip\bigskip\bigskip
+
+\href{https://twitter.com/lambdatotoro}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
+\href{https://chaos.social/@lambdatotoro}{\includegraphics[scale=0.125]{images/mastodon_logo.png}}
+\href{https://github.com/jbetzend}{\includegraphics[scale=0.125]{images/github_logo.png}}
+\href{https://whispeer.de/en/user/jbetzend}{\includegraphics[scale=0.125]{images/whispeer_logo.png}}
+\texttt{@lambdaTotoro(@chaos.social)} / \texttt{@jbetzend}
+\end{center}
 \end{frame}
+
 
 %------------------------------------------------------------------------------------
 
@@ -80,7 +58,9 @@ Technische Fakultät, FAU Erlangen
 
 \begin{multicols}{2}
 
-Die häufigste Frage an meinen Studiengang:
+Mein Studium: \glqq Intelligente Systeme\grqq .
+
+Was war wohl die häufigste Frage an meinen Studiengang?
 
 \pause
 
@@ -122,7 +102,7 @@ Die häufigste Frage an meinen Studiengang:
 
 \begin{center}
 \dots zumindest habe ich bisher so immer meine Slams angefangen.
-\pause\bigskip
+\bigskip
 
 Wir müssen reden!
 \end{center}
@@ -141,25 +121,15 @@ Die Errungenschaften\\von Maschinellem Lernen
 \begin{frame}
 
 \begin{center}
-Maschinelles Lernen ist prinzipiell sehr mächtig und nützlich\dots
+Maschinelles Lernen ist mächtig und nützlich\dots
 \end{center}
 
 \begin{center}
-\includegraphics[width=.9\textwidth]{images/autopilotnew.jpg} 
+\includegraphics[width=\textwidth]{images/autopilotnew.jpg} 
 \end{center}
-\end{frame}
-
-\begin{frame}[fragile]
-\small
-\begin{verbatim}
-           "Nachdem die Menschheit Jahrtausende damit verbracht
-            hat, ihre Taktiken zu verbessern, erzählen uns die
-            Computer, dass wir komplett daneben liegen."
-                                                      -- Ke Jie
-\end{verbatim}
 
 \begin{center}
-\includegraphics[scale=0.65]{images/kejie.png} 
+\dots aber wenn wir nicht aufpassen kann es Probleme geben!
 \end{center}
 \end{frame}
 
@@ -185,6 +155,12 @@ Wie funktioniert\\Maschinelles Lernen?
 
 \begin{frame}
 \begin{center}
+\includegraphics[width=.95\textwidth]{images/perceptron} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
 \includegraphics[width=\textwidth]{images/simple_neural_network_header.jpg} 
 \end{center}
 \end{frame}
@@ -197,14 +173,12 @@ Wie funktioniert\\Maschinelles Lernen?
 
 %------------------------------------------------------------------------------------
 
-%------------------------------------------------------------------------------------
-
 \section{Die Probleme}
 
 \begin{frame}
 \begin{center}
 \huge
-Die Fehler von\\Maschinellem Lernen
+Probleme in der Theorie
 \end{center}
 \end{frame}
 
@@ -215,19 +189,18 @@ Die Fehler von\\Maschinellem Lernen
 \end{center}
 
 \pause
-\bigskip
 
 \begin{multicols}{2}
 
 \begin{center}
-\includegraphics[scale=0.125]{images/sirifail2.jpg} 
+\includegraphics[scale=0.11]{images/sirifail2.jpg} 
 \end{center}
 
 \columnbreak
 \pause
 
 \begin{center}
-\includegraphics[scale=0.125]{images/sirifail3.jpg} 
+\includegraphics[scale=0.11]{images/sirifail3.jpg} 
 \end{center}
 
 \end{multicols}
@@ -282,16 +255,17 @@ Probleme in der Praxis
 \end{frame}
 
 \begin{frame}
-\begin{multicols}{2}
+\frametitle{Andere Kulturen, andere Sitten}
 \begin{center}
-\includegraphics[scale=1.25]{images/morals.png} 
+\includegraphics[scale=1.5]{images/morals.png} 
 \end{center}
-\columnbreak
-\pause
+\end{frame}
+
+\begin{frame}
+\frametitle{Umfahren vs. Umfahren}
 \begin{center}
-\includegraphics[scale=1.45]{images/sparing} 
+\includegraphics[scale=1.65]{images/sparing} 
 \end{center}
-\end{multicols}
 \end{frame}
 
 %------------------------------------------------------------------------------------
@@ -319,13 +293,13 @@ Probleme in der Praxis
 
 \begin{frame}
 \begin{center}
-\includegraphics[height=\textheight]{images/cat_adversarial.png} 
+\includegraphics[width=\textwidth]{images/cat_adversarial.png} 
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\includegraphics[height=\textheight]{images/cat_rotated.png} 
+\includegraphics[width=\textwidth]{images/cat_rotated.png} 
 \end{center}
 \end{frame}
 
@@ -336,19 +310,19 @@ Feindliche 3D-gedruckte Schildkröte:
 \end{center}
 
 \begin{center}
-\includegraphics[width=0.8\textwidth]{images/rifle_turtle.jpg} 
+\includegraphics[width=\textwidth]{images/rifle_turtle.jpg} 
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{images/turtle_class} 
+\includegraphics[width=\textwidth]{images/turtle_class} 
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{images/baseball_class} 
+\includegraphics[width=\textwidth]{images/baseball_class} 
 \end{center}
 \end{frame}
 
@@ -356,15 +330,15 @@ Feindliche 3D-gedruckte Schildkröte:
 
 \begin{multicols}{2}
 
-\vspace*{60pt}
+\vspace*{73pt}
 \includegraphics[scale=0.6]{images/Happy-Thumbs-Up-Robot.png} 
 
 \columnbreak
 
-\vspace*{60pt}
+\vspace*{40pt}
 
 \Huge
-\hspace*{-30pt}Vielen Dank für die\\ \hspace*{-20pt} Aufmerksamkeit!
+\hspace*{-30pt}Vielen Dank\\ für's\\ Zuhören!
 \end{multicols}
 \end{frame}
 
