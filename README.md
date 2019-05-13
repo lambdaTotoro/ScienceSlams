@@ -1,6 +1,13 @@
 # ScienceSlams
 My science slam slides, for easier distribution and code checking.
 
+## Upcoming Slams
+
+I will be in these cities on these dates:
+
+- 2019-05-15 -- Ludwigsburg
+- 2019-07-05 -- Nationale Akademie d. Wiss. Leopoldina
+
 ## Past Slams
 
 Since this repo started, I've been to these slams:
@@ -14,9 +21,4 @@ Since this repo started, I've been to these slams:
 - 2018-12-12 -- Hamburg
 - 2019-02-17 -- Mannheim
 - 2019-02-19 -- München (Montage)
-
-## Upcoming Slams
-
-I will be in these cities on these dates:
-
-// no set dates, currently.
+- 2019-04-10 -- Hannover, Messe (ContiTec)
