@@ -25,6 +25,9 @@
   \endgroup
 }
 
+%src: https://tex.stackexchange.com/questions/34921/how-to-overlap-images-in-a-beamer-slide
+\def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
+
 \begin{document}
 
 %------------------------------------------------------------------------------------
@@ -33,19 +36,20 @@
 \begin{frame}
 \begin{center}
 \vfill
-\Large \glqq Maschinelles Lernen\grqq
+\huge Maschinelles Lernen
 \normalsize 
 
 (Und warum das vielleicht gruseliger ist, als es klingt)
-\medskip
+\bigskip\bigskip
 
-\Large Jonas Betzendahl
-\bigskip\bigskip\bigskip\bigskip
+\large Jonas Betzendahl, M. Sc.
+\bigskip\bigskip
 
 \href{https://twitter.com/lambdatotoro}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
 \href{https://chaos.social/@lambdatotoro}{\includegraphics[scale=0.125]{images/mastodon_logo.png}}
 \href{https://github.com/jbetzend}{\includegraphics[scale=0.125]{images/github_logo.png}}
 \href{https://whispeer.de/en/user/jbetzend}{\includegraphics[scale=0.125]{images/whispeer_logo.png}}
+
 \texttt{@lambdaTotoro(@chaos.social)} / \texttt{@jbetzend}
 \end{center}
 \end{frame}
@@ -175,10 +179,16 @@ Wie funktioniert\\Maschinelles Lernen?
 
 \section{Die Probleme}
 
+%------------------------------------------------------------------------------------
+
+\subsection{Common Problems}
+
 \begin{frame}
 \begin{center}
-\huge
-Probleme in der Theorie
+\Huge
+\textbf{Probleme} \bigskip
+
+\huge \textit{Theorie und Praxis}
 \end{center}
 \end{frame}
 
@@ -203,6 +213,9 @@ Probleme in der Theorie
 \includegraphics[scale=0.11]{images/sirifail3.jpg} 
 \end{center}
 
+\pause
+\Put(-200,50){\includegraphics[scale=1.5]{images/manshrug.png}}
+
 \end{multicols}
 \end{frame}
 
@@ -216,56 +229,17 @@ Probleme in der Theorie
 \begin{center}
 \includegraphics[width=\textwidth, keepaspectratio]{images/recog_gibbon.png} 
 \end{center}
-\end{frame}
 
-
-\begin{frame}
-\begin{center}
-\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_1.png}
-\end{center}
+\pause
+\Put(-40,0){\includegraphics[scale=1.5]{images/manshrug.png}}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_2.png} 
+\includegraphics[scale=2]{images/sparing} 
 \end{center}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_3.png} 
-\end{center}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-\includegraphics[height=0.65\textheight,keepaspectratio]{images/deep_neural_networks_4.png} 
-\end{center}
-\end{frame}
-
-%------------------------------------------------------------------------------------
-
-\subsection{Common Problems}
-
-\begin{frame}
-\begin{center}
-\huge
-Probleme in der Praxis
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Andere Kulturen, andere Sitten}
-\begin{center}
-\includegraphics[scale=1.5]{images/morals.png} 
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Umfahren vs. Umfahren}
-\begin{center}
-\includegraphics[scale=1.65]{images/sparing} 
-\end{center}
+\pause
+\Put(140,165){\includegraphics[scale=1.5]{images/manshrug_rotate.png}}
 \end{frame}
 
 %------------------------------------------------------------------------------------
