@@ -1,0 +1,348 @@
+\documentclass[aspectratio=43,x11names]{beamer}
+\usetheme{Pittsburgh}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes,arrows,chains}
+
+\author{Jonas Betzendahl}
+\title{Algorithmen und Du}
+
+\beamertemplatenavigationsymbolsempty 
+
+%src: https://tex.stackexchange.com/questions/34921/how-to-overlap-images-in-a-beamer-slide
+\def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
+
+\begin{document}
+
+%------------------------------------------------------------------------------------
+\section{Introduction}
+
+\begin{frame}
+\begin{center}
+\vfill
+\huge Algorithmen und Du
+\normalsize 
+\smallskip
+\smallskip
+
+Warum Künstliche Intelligenz nie politisch neutral sein kann
+\bigskip\bigskip
+
+\large Jonas Betzendahl, M.Sc.
+\bigskip\bigskip
+
+\href{https://twitter.com/lambdatotoro}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
+\href{https://chaos.social/@lambdatotoro}{\includegraphics[scale=0.125]{images/mastodon_logo.png}}
+\href{https://github.com/jbetzend}{\includegraphics[scale=0.125]{images/github_logo.png}}
+\href{https://whispeer.de/en/user/jbetzend}{\includegraphics[scale=0.125]{images/whispeer_logo.png}}
+
+\texttt{@lambdaTotoro (@chaos.social)}
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+
+\begin{frame}
+\begin{center}
+\huge
+Künstliche Intelligenz
+\bigskip
+
+\large
+The hype is real\dots
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Menschen sind \emph{sehr} fehlbar...}
+\begin{minipage}{0.45\textwidth}
+\begin{center}
+\includegraphics[keepaspectratio, height=0.7\textheight]{images/calipers_transparent}
+\end{center}
+\end{minipage}\begin{minipage}{0.45\textwidth}
+\begin{center}
+\pause
+\includegraphics[keepaspectratio, height=0.7\textheight]{images/human_bias}
+\end{center}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\frametitle{...und \emph{sehr} langsam!}
+\begin{center}
+\includegraphics[height=0.6\textheight, keepaspectratio]{images/sloth}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[keepaspectratio, height=0.75\textheight]{images/elektronengehirn}
+\end{center}
+\pause
+\Put(-10,400){\includegraphics[scale=0.4, angle=5]{images/ki_lufthansa}}
+\pause
+\Put(-20,200){\includegraphics[scale=0.25, angle=25]{images/gema_ki_klein}}
+\pause
+\Put(-10,350){\includegraphics[scale=0.4, angle=-15]{images/ki_suicide}}
+\pause
+\Put(-10,125){\includegraphics[scale=0.3, angle=-4]{images/ki_medicine}}
+\pause
+\Put(-10,250){\includegraphics[scale=0.35, angle=10]{images/ki_law}}
+\pause
+\Put(10,250){\includegraphics[scale=0.71]{images/spahn}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bonusrunde!}
+\begin{center}
+\large
+Science-Slam-ception!
+
+\huge
+\emph{Blockchains}
+\pause\bigskip
+
+\large
+Macht eine Blockchain für mich, meine Firma\\ oder meine Organisation Sinn?
+\pause
+\bigskip\bigskip\bigskip
+
+\Huge
+\includegraphics[scale=0.65]{images/pointing.png} \textcolor{red}{\textbf{\textit{Nein!}}} \includegraphics[scale=0.65]{images/pointing2.png}
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\section{How it works and weaknesses}
+
+\begin{frame}
+\begin{center}
+\huge
+Algorithmen \&\\
+Maschinelles Lernen
+\bigskip
+
+\large
+Was ist das? Wie geht das?\\ Und was sind die Probleme?
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Algorithmen}
+\begin{center}
+\includegraphics[height=0.7\textheight, keepaspectratio]{images/recipe}
+
+Alltäglicher als vielleicht gedacht\dots
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Maschinelles Lernen}
+\begin{center}
+\includegraphics[width=0.95\textwidth, keepaspectratio]{images/funnel}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Schicke Mathematik}
+
+\begin{minipage}{0.52\textwidth}
+\begin{center}
+\includegraphics[scale=0.3]{images/linear_nonlinear.png} 
+\end{center}
+\end{minipage}\begin{minipage}{0.35\textwidth}
+$$y_k = \varphi\left(\sum_{j=0}^m w_{kj}x_j\right)$$
+\end{minipage}
+
+\small
+\begin{minipage}{0.47\textwidth}
+$$\Delta w_{ij}=-\eta \frac{\partial E}{\partial w_{ij}} = -\eta o_i \delta_j$$
+$$\lambda(x) = C(t-x)^2$$
+$$r_i \dot{y_i} = -y_i \sum_{j=1}^n w_{ji}\sigma\left(y_j - \Theta_j\right) * I_i(t)$$
+\end{minipage}\begin{minipage}{0.47\textwidth}
+\begin{center}
+\includegraphics[scale=0.35]{images/recursive.jpg} 
+\end{center}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\frametitle{Limitierungen}
+
+Egal wie viele beeindruckende Formeln und tolle Buzzwords geworfen werden, es gilt immer\dots\bigskip
+
+\begin{itemize}
+\pause\item Wir können nur lernen, was schon in den Daten drin ist!\\ Auf welchen Daten lernen wir?\\
+
+\pause\item Die Maschine optimiert, weiß aber nicht was \glqq optimal\grqq\ bedeutet! Wer bestimmt worauf optimiert sind und was hat das für Folgen?\\
+
+\pause\item Wenn KI und Gesellschaft aufeinander treffen besteht die Gefahr der selbsterfüllenden Prophezeihung!
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\section{Surely nobody would be this stupid?}
+
+\begin{frame}
+\begin{center}
+\huge
+KI in der freien Wildbahn
+\bigskip
+
+\large
+Leider nicht nur theoretisch problematisch\dots
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Erkennung von Panzern}
+\begin{center}
+\includegraphics[height=0.7\textheight, keepaspectratio]{images/tank}
+
+Der vielleicht spektakulärste Fehlschlag des Feldes!
+\pause
+\Put(-250,250){\includegraphics[scale=0.45, angle=15]{images/princess_bride.jpg} }
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Toxic Discourse for Fun and Profit}
+\begin{center}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/youtube}
+\bigskip
+
+$1.000.000.000$ Stunden pro Tag\\
+Ziel erreicht, Verantwortung verfehlt!
+\pause
+\Put(-220,250){\includegraphics[scale=0.2, angle=-15]{images/goldblum} }
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bewertung von Chancen am Arbeitsmarkt?}
+\begin{minipage}{.6\textwidth}
+\includegraphics[width=0.8\textwidth, keepaspectratio]{images/negativfaktor}
+\end{minipage}\hspace*{-25pt}\begin{minipage}{.4\textwidth}
+Das \texttt{AMS-Arbeitsmarkt} \texttt{-Chancen-Modell}, die zukünftige Basis für Arbeitslosenunterstützung in Österreich, rechnet allen Frauen einen negativen Faktor an.
+\end{minipage}
+
+\pause
+\Put(50,250){\includegraphics[scale=1.8, angle=0]{images/any_of_this} }
+\end{frame}
+
+\begin{frame}
+\frametitle{Erkennen von sexueller Orientierung?}
+\begin{minipage}{.6\textwidth}
+\includegraphics[width=0.8\textwidth, keepaspectratio]{images/paper_orientation}
+\end{minipage}\hspace*{-25pt}\begin{minipage}{.4\textwidth}
+\includegraphics[width=0.99\textwidth, keepaspectratio]{images/composite_faces}
+\end{minipage}
+
+\pause
+\Put(0,250){\includegraphics[scale=0.45, angle=15]{images/princess_bride.jpg} }
+\pause
+\Put(0,250){\includegraphics[scale=0.2, angle=-15]{images/goldblum} }
+\end{frame}
+
+\begin{frame}
+\frametitle{Erkennen von Maskierten?}
+\begin{minipage}{.6\textwidth}
+\includegraphics[width=0.8\textwidth, keepaspectratio]{images/paper_disguised}
+\end{minipage}\hspace*{-25pt}\begin{minipage}{.6\textwidth}
+\includegraphics[width=0.8\textwidth, keepaspectratio]{images/disguised}
+\end{minipage}
+
+\pause
+\Put(0,250){\includegraphics[scale=0.2, angle=-15]{images/goldblum} }
+\pause
+\Put(50,250){\includegraphics[scale=1.8, angle=0]{images/any_of_this} }
+\end{frame}
+
+\begin{frame}
+\frametitle{``Phrenology as a Service''}
+\begin{center}
+\includegraphics[keepaspectratio, height=0.7\textheight]{images/hirevue}
+
+\large
+Gesichtsanalyse im Bewerbungsgespräch
+\end{center}
+\pause
+\Put(90,305){\includegraphics[scale=0.3]{images/calipers_transparent}}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[keepaspectratio, height=0.85\textheight]{images/thomas}
+\end{center}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\section{What to do about it?}
+
+\begin{frame}
+\begin{center}
+\huge
+Was tun wir dagegen?
+
+\large
+take-home messages
+\normalsize
+\end{center}
+\bigskip
+
+Jedes Mal wenn \glqq Künstliche Intelligenz\grqq\ oder \glqq Maschinelles Lernen\grqq\ aufkommen:
+\medskip
+
+\begin{itemize}
+\pause\item \emph{Woher} wird gelernt? Welches \emph{Datenset} wird benutzt?
+\pause\item \emph{Was} wird gelernt? Worauf wird \emph{optimiert}?
+\pause\item Was sind die \emph{Folgen} von diesen Entscheidungen?
+\end{itemize}
+
+\pause\bigskip\bigskip
+\begin{center}
+\large
+skeptisch bleiben!
+\end{center}
+\Put(235,45){\includegraphics[scale=0.5, keepaspectratio]{images/thinking_emoji}}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Quellen:}
+\scriptsize
+\begin{itemize}
+\item Diskriminierung b. Wohnungssuche ``Hanna und Ismail'', Köppen et al.  2017\\
+\url{https://www.hanna-und-ismail.de/}
+
+\item ``Dynamic fairness - Breaking vicious cycles in automatic decision making'',
+Paaßen et al., 2019\\ \url{https://arxiv.org/abs/1902.00375}
+
+\item ``Disguised Face Identification (DFI) with Facial KeyPoints using Spatial Fusion Convolutional Network'', Singh et al., 2017\\ \url{https://arxiv.org/abs/1708.09317}
+
+\item ``Deep Neural Networks Are More Accurate Than Humans at Detecting Sexual Orientation From Facial Images'', Kosinski et al., 2018\\ \url{https://www.gsb.stanford.edu/faculty-research/publications/deep-neural-networks-are-more-accurate-humans-detecting-sexual}
+
+\item ``Negativfaktor Frau'', Ingrid Brodnig, 2018 \\ \url{https://www.profil.at/meinung/ingrid-brodnig-negativfaktor-frau-10422551}
+
+\item ``AI used for first time in job interviews in UK to find best applicants'', The Telegraph, 2019-09-27 \\ \url{https://www.telegraph.co.uk/news/2019/09/27/ai-facial-recognition-used-first-time-job-interviews-uk-find/}
+
+\end{itemize}
+\end{frame}
+\end{document}
+
