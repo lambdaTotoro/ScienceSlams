@@ -5,8 +5,8 @@ My science slam slides, for easier distribution and code checking.
 
 I will be in these cities on these dates:
 
+- 2020-01-17 -- Flensburg
 - 2020-01-18 -- Lübeck
-- 2020-03-05 -- Berlin (CCW)
 
 ## Past Slams
 
