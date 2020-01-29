@@ -7,6 +7,7 @@ I will be in these cities on these dates:
 
 - 2020-02-27 -- Heidelberg
 - 2020-03-05 -- Berlin @ CCW Kongress
+- 2020-09-39 -- Wolfsburg
 
 ## Past Slams
 
