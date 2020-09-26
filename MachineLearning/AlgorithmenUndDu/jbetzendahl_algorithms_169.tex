@@ -35,11 +35,11 @@
 \smallskip
 \smallskip
 
-Warum Künstliche Intelligenz nie politisch neutral sein kann
+Warum Künstliche Intelligenz Nie Politisch Neutral Sein Kann
 \bigskip\bigskip
 
-\large Jonas Betzendahl, M.Sc.
-\bigskip\bigskip
+\large Jonas Betzendahl, M.Sc.\\\normalsize FAU Erlangen-Nürnberg, KWARC
+\bigskip\bigskip\large
 
 \href{https://twitter.com/lambdatotoro}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
 \href{https://chaos.social/@lambdatotoro}{\includegraphics[scale=0.125]{images/mastodon_logo.png}}
@@ -147,13 +147,12 @@ Alltäglicher als vielleicht gedacht\dots
 \end{center}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Maschinelles Lernen}
-\begin{center}
-\includegraphics[height=0.8\textheight, keepaspectratio]{images/funnel}
-\end{center}
-\end{frame}
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/funnel}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+    \end{frame}
+}
 
 \begin{frame}[fragile]
 \frametitle{Beeindruckende Mathematik}
@@ -178,33 +177,23 @@ $$r_i \dot{y_i} = -y_i \sum_{j=1}^n w_{ji}\sigma\left(y_j - \Theta_j\right) * I_
 \end{minipage}
 \end{frame}
 
-\begin{frame}
-\frametitle{Public Opinion}
-\begin{center}
-\includegraphics[height=0.75\textheight,keepaspectratio]{images/no_bias.jpeg} 
-\end{center}
-\end{frame}
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,keepaspectratio]{images/no_bias}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+    \frametitle{Public Opinion}
+    \end{frame}
+    
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/chain}}
+    \begin{frame}
+    \frametitle{Fehlerquellen}
+    \pause
+    \Put(0,150){\Huge\emph{Was} wird gelernt?}
+    \pause
+    \Put(175,-150){\Huge\emph{Woraus} wird gelernt?}
+    \end{frame}
+}
 
-\begin{frame}
-\frametitle{Limitierungen}
-
-Trotz allen Buzzwords, immer fragen: \dots \bigskip
-
-\begin{itemize}
-\pause\item Auf welchen Daten lernen wir?\\
-
-\pause\item Wer bestimmt worauf optimiert wird?\\
-
-\pause\item Was sind die Folgen? Selbsterfüllende Prophezeihung?\\
-\end{itemize}
-
-\pause\bigskip
-
-Und immer daran denken: \dots
-\begin{itemize}
-\item ML gibt immer nur ein \emph{Was}, niemals ein \emph{Warum}!
-\end{itemize}
-\end{frame}
 
 %------------------------------------------------------------------------------------
 
@@ -212,11 +201,11 @@ Und immer daran denken: \dots
 
 \begin{frame}
 \begin{center}
-\huge
+\Huge
 KI in der freien Wildbahn
 \bigskip
 
-\large
+\Large
 Leider nicht nur theoretisch problematisch\dots
 \end{center}
 \end{frame}
@@ -228,7 +217,7 @@ Leider nicht nur theoretisch problematisch\dots
 
 Der vielleicht spektakulärste Fehlschlag des Feldes!
 \pause
-\Put(-275,220){\includegraphics[scale=0.45, angle=10]{images/princess_bride.jpg} }
+\Put(-425,220){\includegraphics[scale=3, angle=10]{images/falsch_gelernt.png} }
 \end{center}
 \end{frame}
 
@@ -245,7 +234,7 @@ Der vielleicht spektakulärste Fehlschlag des Feldes!
 \end{minipage}
 
 \pause
-\Put(70,250){\includegraphics[scale=1.8, angle=-10]{images/any_of_this} }
+\Put(-40,200){\includegraphics[scale=2.3, angle=15]{images/konsequenzen_ignoriert.png} }
 \end{frame}
 
 \begin{frame}
@@ -261,9 +250,9 @@ Der vielleicht spektakulärste Fehlschlag des Feldes!
 \end{minipage}
 
 \pause
-\Put(50,200){\includegraphics[scale=0.45, angle=15]{images/princess_bride.jpg} }
+\Put(-100,325){\includegraphics[scale=3, angle=-10]{images/falsch_gelernt.png} }
 \pause
-\Put(50,250){\includegraphics[scale=0.225, angle=-15]{images/goldblum} }
+\Put(-40,200){\includegraphics[scale=2.3, angle=15]{images/konsequenzen_ignoriert.png} }
 \end{frame}
 
 \begin{frame}
@@ -279,10 +268,24 @@ Gesichtsanalyse im Bewerbungsgespräch
 \end{frame}
 
 \begin{frame}
+\frametitle{Phrenologie, aber vom Computer}
+\begin{minipage}{.455\textwidth}
 \begin{center}
-\includegraphics[keepaspectratio, height=0.85\textheight]{images/thomas}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/phrenology.png}
 \end{center}
+\end{minipage}\begin{minipage}{.545\textwidth}
+\begin{center}
+\includegraphics[width=0.99\textwidth, keepaspectratio]{images/phrenology.jpg}
+\end{center}
+\end{minipage}
 \end{frame}
+
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/thomas}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+    \end{frame}
+}
 
 %------------------------------------------------------------------------------------
 
