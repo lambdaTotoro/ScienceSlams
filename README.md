@@ -5,8 +5,6 @@ My science slam slides, for easier distribution and code checking.
 
 I will be in these cities on these dates:
 
-- 2020-02-27 -- Heidelberg
-- 2020-03-05 -- Berlin @ CCW Kongress
 - 2020-09-39 -- Wolfsburg
 
 ## Past Slams
@@ -33,3 +31,5 @@ Since this repo started, I've been to these slams:
 - 2019-11-24 -- BOT or NOT? Magdeburg
 - 2020-01-17 -- Flensburg
 - 2020-01-18 -- Lübeck
+- 2020-02-27 -- Heidelberg
+- 2020-03-05 -- Berlin @ CCW Kongress
