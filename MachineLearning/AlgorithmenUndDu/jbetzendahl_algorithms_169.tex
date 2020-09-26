@@ -54,11 +54,11 @@ Warum Künstliche Intelligenz Nie Politisch Neutral Sein Kann
 
 \begin{frame}
 \begin{center}
-\huge
+\Huge
 Künstliche Intelligenz
 \bigskip
 
-\large
+\LARGE
 The hype is real\dots
 \end{center}
 \end{frame}
@@ -77,30 +77,32 @@ The hype is real\dots
 \end{minipage}
 \end{frame}
 
-\begin{frame}
-\frametitle{...und \emph{sehr} langsam!}
-\begin{center}
-\includegraphics[height=0.75\textheight, keepaspectratio]{images/sloth}
-\end{center}
-\end{frame}
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/sloth}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+    \Put(150,170){\color{black}\huge \rotatebox{-10}{...und \emph{sehr} langsam!}}
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/elektronengehirn}}
 
 \begin{frame}
-\begin{center}
-\includegraphics[keepaspectratio, height=0.85\textheight]{images/elektronengehirn}
-\end{center}
 \pause
-\Put(30,400){\includegraphics[scale=0.4, angle=5]{images/ki_lufthansa}}
+\Put(30,0){\includegraphics[scale=0.4, angle=5]{images/ki_lufthansa}}
 \pause
-\Put(20,240){\includegraphics[scale=0.25, angle=25]{images/gema_ki_klein}}
+\Put(20,0){\includegraphics[scale=0.25, angle=25]{images/gema_ki_klein}}
 \pause
-\Put(10,350){\includegraphics[scale=0.4, angle=-15]{images/ki_suicide}}
+\Put(10,0){\includegraphics[scale=0.4, angle=-15]{images/ki_suicide}}
 \pause
-\Put(10,125){\includegraphics[scale=0.3, angle=-4]{images/ki_medicine}}
+\Put(10,-200){\includegraphics[scale=0.3, angle=-4]{images/ki_medicine}}
 \pause
-\Put(80,250){\includegraphics[scale=0.35, angle=10]{images/ki_law}}
+\Put(0,0){\includegraphics[scale=0.35, angle=10]{images/ki_law}}
 \pause
-\Put(40,250){\includegraphics[scale=0.8]{images/spahn}}
+\Put(40,0){\includegraphics[scale=0.8]{images/spahn}}
 \end{frame}
+}
 
 %\begin{frame}
 %\frametitle{Bonusrunde!}
@@ -128,22 +130,21 @@ The hype is real\dots
 
 \begin{frame}
 \begin{center}
-\huge
+\Huge
 Algorithmen \&\\
 Maschinelles Lernen
 \bigskip
 
-\large
+\LARGE
 Was ist das? Wie geht das?\\ Und was sind die Probleme?
 \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Algorithmen}
 \begin{center}
-\includegraphics[height=0.7\textheight, keepaspectratio]{images/recipe}
-
-Alltäglicher als vielleicht gedacht\dots
+\includegraphics[height=0.8\textheight, keepaspectratio]{images/man-cooking-clipart}
+\Put(-230,270){\includegraphics[scale=0.05, keepaspectratio,angle=15]{images/arrow}}
+\Put(-275,325){\huge Algorithmen}
 \end{center}
 \end{frame}
 
