@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169,x11names]{beamer}
+\documentclass[aspectratio=169,usenames,dvipsnames]{beamer}
 \usetheme{Pittsburgh}
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
@@ -11,6 +11,7 @@
 \usepackage{wrapfig}
 \usepackage{hyperref}
 \usepackage{tikz}
+\usepackage{neuralnetwork}
 
 \usetikzlibrary{shapes,arrows,chains}
 
@@ -54,12 +55,13 @@ Warum Künstliche Intelligenz Nie Politisch Neutral Sein Kann
 
 \begin{frame}
 \begin{center}
-\Huge
-Künstliche Intelligenz
+\LARGE
+Wohin man auch schaut\dots
 \bigskip
 
-\LARGE
-The hype is real\dots
+\Huge
+Künstliche Intelligenz\\
+ist überall
 \end{center}
 \end{frame}
 
@@ -89,41 +91,9 @@ The hype is real\dots
     \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/elektronengehirn}}
 
 \begin{frame}
-\pause
-\Put(30,0){\includegraphics[scale=0.4, angle=5]{images/ki_lufthansa}}
-\pause
-\Put(20,0){\includegraphics[scale=0.25, angle=25]{images/gema_ki_klein}}
-\pause
-\Put(10,0){\includegraphics[scale=0.4, angle=-15]{images/ki_suicide}}
-\pause
-\Put(10,-200){\includegraphics[scale=0.3, angle=-4]{images/ki_medicine}}
-\pause
-\Put(0,0){\includegraphics[scale=0.35, angle=10]{images/ki_law}}
-\pause
-\Put(40,0){\includegraphics[scale=0.8]{images/spahn}}
+
 \end{frame}
 }
-
-%\begin{frame}
-%\frametitle{Bonusrunde!}
-%\begin{center}
-%\large
-%Science-Slam-ception!
-%
-%\huge
-%\emph{Blockchains}
-%\bigskip
-%
-%\large
-%Macht eine Blockchain für mich, meine Firma\\ oder meine Organisation Sinn?
-%\pause
-%\bigskip\bigskip\bigskip
-%
-%\Huge
-%\includegraphics[scale=0.65]{images/pointing.png} \textcolor{red}{\textbf{\textit{Nein!}}} \includegraphics[scale=0.65]{images/pointing2.png}
-%\end{center}
-%\end{frame}
-
 %------------------------------------------------------------------------------------
 
 \section{How it works and weaknesses}
@@ -155,6 +125,99 @@ Was ist das? Wie geht das?\\ Und was sind die Probleme?
     \end{frame}
 }
 
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_white.png} 
+    \end{center}
+    \pause
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \pause
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
+{
+	\setbeamercolor{background canvas}{bg=LimeGreen}
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_green.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_white.png} 
+    \end{center}
+    \pause
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/kangaroo}}
+    \pause
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+
+{
+	\setbeamercolor{background canvas}{bg=LimeGreen}
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_green.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/kangaroo}}
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_white.png} 
+    \end{center}
+    \pause
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \pause
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=OrangeRed}
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_red.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_white.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_white.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower_1}}
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
 \begin{frame}[fragile]
 \frametitle{Beeindruckende Mathematik}
 
@@ -179,19 +242,10 @@ $$r_i \dot{y_i} = -y_i \sum_{j=1}^n w_{ji}\sigma\left(y_j - \Theta_j\right) * I_
 \end{frame}
 
 {
-    \usebackgroundtemplate{\includegraphics[height=\paperheight,keepaspectratio]{images/no_bias_wide}}
-    \setbeamertemplate{navigation symbols}{}
-    \begin{frame}[plain]
-    \frametitle{Public Opinion}
-    \end{frame}
-    
     \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/chain}}
     \begin{frame}
-    \frametitle{Fehlerquellen}
-    \pause
-    \Put(0,150){\Huge\emph{Was} wird gelernt?}
-    \pause
-    \Put(175,-150){\Huge\emph{Woraus} wird gelernt?}
+    \Put(0,125){\Huge\emph{Was} wird gelernt?}
+    \Put(175,-175){\Huge\emph{Woraus} wird gelernt?}
     \end{frame}
 }
 
@@ -212,73 +266,283 @@ Leider nicht nur theoretisch problematisch\dots
 \end{frame}
 
 \begin{frame}
-\frametitle{Erkennung von Panzern}
-\begin{center}
-\includegraphics[height=0.7\textheight, keepaspectratio]{images/tank}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step-1}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
 
-Der vielleicht spektakulärste Fehlschlag des Feldes!
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step-05}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step0}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step1}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step2}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step3}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step4}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step5}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step6}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step7}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step8}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step9}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step10}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step11}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step12}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.9\textwidth, keepaspectratio]{images/step13}
+\end{minipage}\begin{minipage}{.5\textwidth}
+\textbf{De-pixel-iser}
+\bigskip
+
+Wäre es nicht toll, wenn wir aus einem stark verpixelten Foto raten könnten, wie eine Person aussieht, wie bei CSI?
+\bigskip
+
+``Computer! Enhance!''
+\end{minipage}
 \pause
-\Put(-425,220){\includegraphics[scale=3, angle=10]{images/falsch_gelernt.png} }
+
+\Put(-50,200){\includegraphics[scale=0.5, angle=-15]{images/sparkles}}
+\Put(130,375){\includegraphics[scale=0.5, angle=5]{images/sparkles}}
+\Put(100,-100){\includegraphics[scale=0.5, angle=10]{images/sparkles}}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=1]{images/doomguy} 
 \end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.9]{images/obama} 
+\end{center}
+\pause
+\Put(-75,400){\includegraphics[scale=2.7, angle=-15]{images/falsch_gelernt} }
 \end{frame}
 
 \begin{frame}
 \frametitle{Konsequenzen am Arbeitsmarkt}
 \begin{minipage}{.5\textwidth}
 \begin{center}
-\includegraphics[height=0.75\textheight, keepaspectratio]{images/negativfaktor}
+\includegraphics[height=0.75\textheight, keepaspectratio]{images/amazon_hiring}
 \end{center}
 \end{minipage}\begin{minipage}{.5\textwidth}
 \begin{center}
-\includegraphics[height=0.75\textheight, keepaspectratio]{images/amazon_hiring}
+\includegraphics[height=0.75\textheight, keepaspectratio]{images/negativfaktor}
 \end{center}
 \end{minipage}
 
 \pause
 \Put(-40,200){\includegraphics[scale=2.3, angle=15]{images/konsequenzen_ignoriert.png} }
 \end{frame}
-
 \begin{frame}
-\frametitle{Erkennen von sexueller Orientierung?}
-\begin{minipage}{.6\textwidth}
-\begin{center}
-\includegraphics[height=0.75\textheight, keepaspectratio]{images/paper_orientation}
-\end{center}
-\end{minipage}\hspace*{-25pt}\begin{minipage}{.4\textwidth}
-\begin{center}
-\includegraphics[width=0.99\textwidth, keepaspectratio]{images/composite_faces}
-\end{center}
-\end{minipage}
 
-\pause
-\Put(-100,325){\includegraphics[scale=3, angle=-10]{images/falsch_gelernt.png} }
-\pause
-\Put(-40,200){\includegraphics[scale=2.3, angle=15]{images/konsequenzen_ignoriert.png} }
+\begin{center}
+\includegraphics[width=\textwidth, keepaspectratio]{images/trustworthiness_tweet}
+\end{center}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{``Phrenology as a Service''}
-\begin{center}
-\includegraphics[keepaspectratio, height=0.7\textheight]{images/hirevue}
 
-\large
-Gesichtsanalyse im Bewerbungsgespräch
-\end{center}
+\begin{center}
+\includegraphics[height=0.95\textheight, keepaspectratio]{images/trustworthiness}
 \pause
-\Put(135,275){\includegraphics[scale=0.3]{images/calipers_transparent}}
-\end{frame}
 
-\begin{frame}
-\frametitle{Phrenologie, aber vom Computer}
-\begin{minipage}{.455\textwidth}
-\begin{center}
-\includegraphics[width=0.9\textwidth, keepaspectratio]{images/phrenology.png}
+\Put(-175,270){\includegraphics[scale=1.15, angle=-5]{images/phrenology_bad}}
+\pause
+
+\Put(20,290){\includegraphics[scale=1.1, angle=5]{images/phrenology_good}}
 \end{center}
-\end{minipage}\begin{minipage}{.545\textwidth}
-\begin{center}
-\includegraphics[width=0.99\textwidth, keepaspectratio]{images/phrenology.jpg}
-\end{center}
-\end{minipage}
+
 \end{frame}
 
 {
