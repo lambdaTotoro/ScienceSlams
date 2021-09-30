@@ -3,14 +3,15 @@ My science slam slides, for easier distribution and code checking.
 
 ## Upcoming Slams
 
-- 2021-09-14 -- [Online] Digitale Hochschule
-- 2021-09-23 -- Weinheim, Wiley - Digitales Lernen und Wissen
-- 2021-10-14 -- Hamburg
+- 2021-10-14 -- Hamburg, ITS World Congress
 
 ## Past Slams
 
 Since this repo started, I've been to these slams:
 
+- 2021-09-25 -- Phänomenta, Lüdenscheid
+- 2021-09-23 -- Weinheim, Wiley - Digitales Lernen und Wissen
+- 2021-09-14 -- [Online] Digitale Hochschule
 - 2021-08-27 -- Hamburg, Berufliche Hochschule
 - 2021-06-30 -- [Online] SAP Online Event
 - 2021-01-22 -- [Online] Odeon Göppingen
