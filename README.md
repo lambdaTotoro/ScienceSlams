@@ -3,13 +3,14 @@ My science slam slides, for easier distribution and code checking.
 
 ## Upcoming Slams
 
-- 2021-10-14 -- Hamburg, ITS World Congress
-- 2021-10-15 -- Erlangen
+- Currently no upcoming slams planned.
 
 ## Past Slams
 
 Since this repo started, I've been to these slams:
 
+- 2021-10-15 -- Erlangen -- Was wird werden? - Festival
+- 2021-10-14 -- Hamburg, ITS World Congress
 - 2021-09-25 -- Phänomenta, Lüdenscheid
 - 2021-09-23 -- Weinheim, Wiley - Digitales Lernen und Wissen [(recording)](https://www.youtube.com/watch?v=ufPupYeNDVo&t=2755s)
 - 2021-09-14 -- [Online] Digitale Hochschule
