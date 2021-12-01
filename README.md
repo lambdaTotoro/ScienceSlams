@@ -42,6 +42,6 @@ Since this repo started, I've been to these slams:
 - 2018-05-25 -- Karlsruhe (ZKM) [(recording)](https://www.youtube.com/watch?v=C-IbnYX5dYg)
 - 2017-11-03 -- Flensburg
 - 2017-09-30 -- Lübeck
-- 2017-01-02 -- Berlin @ SO36 [recording](https://www.youtube.com/watch?v=u8-h38yf7H0)
+- 2017-01-02 -- Berlin @ SO36 [(recording)](https://www.youtube.com/watch?v=u8-h38yf7H0)
 - 2016-06-16 -- Hannover @ IdeenExpo [(recording)](https://www.youtube.com/watch?v=rs0Nmi5Ffk4) 
 - 2016-05-26 -- Köln [(recording)](https://www.youtube.com/watch?v=7BZLeRFtGU4)
