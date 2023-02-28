@@ -9,6 +9,8 @@ My science slam slides, for easier distribution and code checking.
 
 Since this repo started, I've been to these slams:
 
+- 2023-03-04 -- Ulm, ROXY
+- 2022-05-17 -- Bremen, Univention Summit
 - 2021-10-15 -- Erlangen -- Was wird werden? - Festival
 - 2021-10-14 -- Hamburg, ITS World Congress
 - 2021-09-25 -- Phänomenta, Lüdenscheid
