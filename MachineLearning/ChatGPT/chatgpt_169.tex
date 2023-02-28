@@ -1,0 +1,168 @@
+\documentclass[aspectratio=169,usenames,dvipsnames]{beamer}
+\usetheme{Pittsburgh}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{pdfrender}
+
+
+\author{Jonas Betzendahl}
+\title{Papageien am Steuer}
+
+\beamertemplatenavigationsymbolsempty 
+
+%src: https://tex.stackexchange.com/questions/34921/how-to-overlap-images-in-a-beamer-slide
+\def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
+
+\definecolor{TitleColour}{rgb}{1,1,0}
+\definecolor{lightestgray}{rgb}{0.95,0.95,0.95}
+
+\begin{document}
+\sffamily
+
+%------------------------------------------------------------------------------------
+\section{Introduction}
+
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/parrot_titlecard}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[fragile]
+    \Put(-20,160){\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.2pt,
+		FillColor=TitleColour,
+	}{\resizebox{0.75\linewidth}{!}{Papageien am Steuer!}}
+    }
+    
+    \Put(-20,130){\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.1pt,
+		FillColor=TitleColour,
+	}{\resizebox{0.85\linewidth}{!}{ChatGPT und die Zukunft von Künstlicher Intelligenz}}
+    }
+    
+    \Put(-20,100){
+        \large
+	\textcolor{yellow}{Jonas Betzendahl, M.Sc.}
+    }
+    \Put(-23,70){
+	\textcolor{yellow}{FAU Erlangen - Nürnberg}
+    }
+    \Put(300,-180){
+	\href{https://github.com/lambdaTotoro}{\includegraphics[scale=0.125]{images/github_logo.png}}
+	\href{https://chaos.social/@lambdatotoro}{\includegraphics[scale=0.125]{images/mastodon_logo.png}}
+	\href{https://twitter.com/lambdatotoro}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
+    }
+    \Put(230,-220){
+	\textcolor{white}{\texttt{@LambdaTotoro (@chaos.social)}}
+    }
+    \end{frame}
+}
+
+\setbeamercolor{background canvas}{bg=lightestgray}
+
+%------------------------------------------------------------------------------------
+
+\begin{frame}
+\begin{center}
+\Large
+Teil I:
+\bigskip
+
+\huge
+\emph{Tschätt Jeepy Wer\dots?}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{0.45\textwidth}
+\vfill
+$$\qquad$$
+\vfill
+\end{minipage}%
+\begin{minipage}{0.55\textwidth}
+\vfill
+\begin{itemize}
+\item ChatBot-Modell: Text rein $\rightarrow$ Text raus
+\item Buzzwords:\\
+Transformer-based Large Language Model
+\item Trainiert auf großen Teilen des Internets:
+\end{itemize}
+\end{minipage}
+\Put(210, -30){$\cdot$ Wikipedia,}
+\Put(206, -60){$\cdot$ Internet Archive,}
+\Put(202, -90){$\cdot$ Common Crawl Corpus,}
+\Put(199, -120){$\cdot$ Nachrichtenseiten,}
+\Put(195, -150){$\cdot$ Wissenschaftliche Papiere,}
+\Put(191, -180){$\cdot$ Social Media (Twitter, Reddit, \dots),}
+\Put(187, -210){$\cdot$ BooksCorpus,}
+\Put(183, -240){$\cdot$ Project Gutenberg,}
+\Put(-20, 50){\includegraphics[width=0.4\textwidth, keepaspectratio]{images/OpenAI_Logo}}
+\end{frame}
+
+%------------------------------------------------------------------------------------
+
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/wbw_card}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[fragile]
+    \Put(50,-70){\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.2pt,
+		FillColor=TitleColour,
+	}{\resizebox{0.4\linewidth}{!}{Lust auf mehr?}}
+    }
+    
+    \Put(-5,-95){\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.1pt,
+		FillColor=white,
+		StrokeColor=white,
+	}{\resizebox{0.6\linewidth}{!}{12 slammige Beiträge zu KI, Klima, Gender\dots}}
+    }
+    
+    \Put(15,-115){\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.1pt,
+		FillColor=white,
+		StrokeColor=white,
+	}{\resizebox{0.3\linewidth}{!}{Extra viel Wissenschaft!}}
+    }
+    \Put(-15,-145){\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.1pt,
+		FillColor=white,
+		StrokeColor=white,
+	}{\resizebox{0.65\linewidth}{!}{Das perfekte Geschenk für konservative Nervensägen!}}
+    }
+    
+    \Put(-5,-165){\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.1pt,
+		FillColor=white,
+		StrokeColor=white,
+	}{\resizebox{0.55\linewidth}{!}{Verfügbar online, im Buchhandel und bei mir!}}
+    }
+    \end{frame} 
+}
+
+%------------------------------------------------------------------------------------
+\section{Werbung \& Ende}
+
+\begin{frame}
+\frametitle{Quellen:}
+\scriptsize
+\begin{itemize}
+\item Bender, Gebru et al.: ``On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?'' \url{https://dl.acm.org/doi/pdf/10.1145/3442188.3445922}
+\end{itemize}
+\end{frame}
+\end{document}
+
