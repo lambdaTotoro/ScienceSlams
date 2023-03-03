@@ -140,10 +140,27 @@ Die möglichen Einsatzbereiche bringen einen ins Schwindeln\dots
 \begin{center}
 \begin{itemize}
 \item Personal Assistants
+\Put(100,-250){\includegraphics[scale=0.2, keepaspectratio, angle=0]{images/flying_phone} }
+\pause
+
 \item Schule \& Universitäten
+\Put(100,-310){\includegraphics[scale=0.08, keepaspectratio, angle=0]{images/student} }
+\pause
+
 \item Programmier-Buddy
+\Put(220,245){\includegraphics[scale=0.25, keepaspectratio, angle=180]{images/programming_head} }
+\pause
+
 \item Kreativsektor
+\Put(50,-150){\includegraphics[scale=0.15, keepaspectratio, angle=0]{images/artist_duck} }
+\pause
+
 \item Texter aller Art
+\Put(220,-205){\includegraphics[scale=0.3, keepaspectratio, angle=0]{images/copywriter} }
+\pause
+
+\item Empfehlungssysteme
+\Put(90,230){\includegraphics[scale=0.5, keepaspectratio, angle=0]{images/robot} }
 \item \dots
 \end{itemize}
 \end{center}
@@ -362,27 +379,39 @@ Teil III:
 \end{frame}
 
 \begin{frame}
-\frametitle{Menschen sind leichtgläubig}
-\end{frame}
+\begin{minipage}{0.5\textwidth}
+\Put(220, -280){\includegraphics[scale=0.3, keepaspectratio, angle=0]{images/angry_bird}}
 
-\begin{frame}
-\frametitle{Reinforcing Human Biases}
-\end{frame}
+Das alles wäre halb so schlimm, aber dieser Papagei macht oft Fehler \emph{und}\dots\pause
+\begin{center}
+\begin{itemize}
+\item \dots wird von einer Firma mit Profitmotiv kontrolliert.
+\Put(110, 00){\includegraphics[width=0.75\textwidth, keepaspectratio, angle=0]{images/nword_article}}
+\pause
 
-\begin{frame}
-\frametitle{Kenia Exploitation}
-\end{frame}
+\item \dots reproduziert menschliche Vorurteile und Ismen in den Trainingsdaten.
+\Put(50, 0){\includegraphics[width=0.75\textwidth, keepaspectratio, angle=5]{images/mashable}}
+\pause
 
-\begin{frame}
-\frametitle{Not as invincible as you thought}
+\item \dots hat enorme menschliche und umweltliche Kosten.
+\Put(90, 100){\includegraphics[width=0.9\textwidth, keepaspectratio, angle=-5]{images/time_kenya}}
+\end{itemize}
+\end{center}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+\vfill
+$$\quad$$
+\vfill
+\end{minipage}%
 \end{frame}
 
 %------------------------------------------------------------------------------------
 
-\section{Werbung \& Ende}
+\section{End}
 
 \begin{frame}
 \begin{center}
+Zusammengefasst:\\
 Die häufigsten Fragen an Forschende (ChatFAQ):\pause
 \end{center}
 \bigskip
@@ -398,9 +427,9 @@ Die häufigsten Fragen an Forschende (ChatFAQ):\pause
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
 \begin{itemize}
-\item Nimmt uns ChatGPT die Jobs weg?\\ Manche vielleicht. Andere schafft es.\pause\medskip
+\item \glqq Größter\grqq\ Unterschied zum Menschen?\\ Kann nicht wie wir generalisieren.\pause\medskip
 
-\item Nimmt dir ChatGPT den Job weg?\\ Unwahrscheinlich. Eher ein Werkzeug.\pause\medskip
+\item Nimmt uns ChatGPT die Jobs weg?\\ Manche vielleicht. Andere schafft es.\pause\medskip
 
 \item Wie fühlst \emph{du} dich bei der Sache?\\ Gespannt auf die Zukunft!!
 \end{itemize}
@@ -421,9 +450,8 @@ Am Ende des Tages gilt für ChatGPT\dots
 \begin{itemize}
 \item Es ist kein Wesen sondern ein \emph{Produkt} in den Händen einer Firma.\pause
 \item Es hat viel Potential, als Werkzeug und als Entertainment.\pause
-\item Es ist begrenzt durch seine Trainingsdaten und macht häufig Fehler.\\
-\dots leider oft mit großer Überzeugung.\pause
-\item Es sollte keine Verantwortung haben, die ein Papagei, der zu viel im Internet unterwegs ist, nicht auch übernehmen könnte.
+\item Es ist begrenzt durch Trainingsdaten und macht Fehler mit Überzeugung.\pause
+\item Es sollte keine Verantwortung haben, die ein Papagei nicht auch übernehmen könnte.
 \end{itemize}
 \end{center}
 \end{minipage}%
@@ -445,12 +473,13 @@ $$\quad$$
 \medskip
 
 \begin{itemize}
-\item Try it yourself: \url{https://chat.openai.com}
 \item Bender, Gebru et al.: ``On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?'' \url{https://dl.acm.org/doi/pdf/10.1145/3442188.3445922}
 \item 11KM-Podcast (tagesschau): ``Schafft ChatGPT das Abi? (das bayerische!)'' \url{https://www.ardaudiothek.de/episode/11km-der-tagesschau-podcast/schafft-chatgpt-das-abi-das-bayerische/tagesschau/12396019/}
-\item TIME: ``OpenAI Used Kenyan Workers on Less Than $\$$2 Per Hour to Make ChatGPT Less Toxic'': \url{https://time.com/6247678/openai-chatgpt-kenya-workers/}
+\item Billy Perigo: ``OpenAI Used Kenyan Workers on Less Than $\$$2 Per Hour to Make ChatGPT Less Toxic'': \url{https://time.com/6247678/openai-chatgpt-kenya-workers/}
 \item Scobel, ``Kulturschock durch KI'': \url{https://www.3sat.de/wissen/scobel/scobel---kulturschock-durch-ki-100.html}
-\item Ars Technica: ``Man beats machine at Go in human victory over AI'': \url{https://arstechnica.com/information-technology/2023/02/man-beats-machine-at-go-in-human-victory-over-ai/}
+\item Mutale Nkonde: ``ChatGPT: New AI system, old bias?'' \url{https://mashable.com/article/chatgpt-ai-racism-bias}
+\item Richard Waters: ``Man beats machine at Go in human victory over AI'': \url{https://arstechnica.com/information-technology/2023/02/man-beats-machine-at-go-in-human-victory-over-ai/}
+\item Max Hauptman: ``Marines outwitted an AI security camera by hiding in a cardboard box and pretending to be trees'' \url{https://taskandpurpose.com/news/marines-ai-paul-scharre/}
 \end{itemize}
 \end{frame}
 \end{document}
