@@ -2,7 +2,7 @@
 \usetheme{Pittsburgh}
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
+%\usepackage[german]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -68,7 +68,51 @@
 \setbeamercolor{background canvas}{bg=lightestgray}
 
 %------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------------
+\section{Motivation}
+\begin{frame}
+\begin{center}
+\Large
+Teil 0:
+\bigskip
 
+\huge
+\emph{Warum ich die Geister rief}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Menschen sind \emph{sehr} fehlbar...}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\includegraphics[keepaspectratio, height=0.75\textheight]{images/calipers_transparent}
+\end{center}
+\end{minipage}\begin{minipage}{0.5\textwidth}
+\begin{center}
+\pause
+\includegraphics[keepaspectratio, height=0.75\textheight]{images/human_bias}
+\end{center}
+\end{minipage}
+\end{frame}
+
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/sloth}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+    \Put(150,170){\color{black}\huge \rotatebox{-10}{...und \emph{sehr} langsam!}}
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/elektronengehirn}}
+
+\begin{frame}
+
+\end{frame}
+}
+
+\section{ChatGPT}
 \begin{frame}
 \begin{center}
 \Large
@@ -76,15 +120,21 @@ Teil I:
 \bigskip
 
 \huge
+\emph{Welche Geister ich rief}\\
+\Large
 \emph{Tschätt Jeepy Wer\dots?}
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{minipage}{0.45\textwidth}
-\vfill
-$$\qquad$$
-\vfill
+\Put(50, 5){\includegraphics[width=0.5\textwidth, keepaspectratio]{images/OpenAI_Logo}}
+\vspace*{20px}
+\begin{itemize}
+\item Fr\"uher Non-Profit, heute (auch) For-Profit
+\item Mission: ``...to ensure that AGI benefits all of humanity...''
+\pause
+\end{itemize}
 \end{minipage}%
 \begin{minipage}{0.55\textwidth}
 \begin{center}
@@ -100,7 +150,6 @@ Transformer-based Large Language Model
 \item Trainiert auf großen Teilen des Internets:
 \end{itemize}
 \end{minipage}
-\Put(0, 25){\includegraphics[width=0.4\textwidth, keepaspectratio]{images/OpenAI_Logo}}
 \pause
 \Put(210, -30){$\cdot$ Wikipedia,}
 \pause
@@ -112,8 +161,7 @@ Transformer-based Large Language Model
 \Put(191, -180){$\cdot$ Common Crawl Corpus,}
 \Put(187, -210){$\cdot$ BooksCorpus,}
 \Put(183, -240){$\cdot$ Project Gutenberg,}
-\pause
-\Put(-65, -240){\includegraphics[width=0.5\linewidth, keepaspectratio]{images/elon_torso} }
+
 \end{frame}
 
 %------------------------------------------------------------------------------------
@@ -127,49 +175,11 @@ für alles eine Antwort zu haben!
 \Put(-100,-250){\includegraphics[height=0.9\textheight, keepaspectratio, angle=0]{images/backen} }
 
 \pause
-\Put(-100,50){\includegraphics[height=0.7\textheight, keepaspectratio, angle=-10]{images/entschuldigung} }
-
-\pause
 \Put(-220,0){\includegraphics[height=0.8\textheight, keepaspectratio, angle=10]{images/excel} }
+
+\pause
+\Put(-100,50){\includegraphics[height=0.7\textheight, keepaspectratio, angle=-10]{images/entschuldigung} }
 \end{center}
-\end{frame}
-
-\begin{frame}
-\begin{minipage}{0.5\textwidth}
-Die möglichen Einsatzbereiche bringen einen ins Schwindeln\dots
-\begin{center}
-\begin{itemize}
-\item Personal Assistants
-\Put(100,-250){\includegraphics[scale=0.2, keepaspectratio, angle=0]{images/flying_phone} }
-\pause
-
-\item Schule \& Universitäten
-\Put(100,-310){\includegraphics[scale=0.08, keepaspectratio, angle=0]{images/student} }
-\pause
-
-\item Programmier-Buddy
-\Put(220,245){\includegraphics[scale=0.25, keepaspectratio, angle=180]{images/programming_head} }
-\pause
-
-\item Kreativsektor
-\Put(50,-150){\includegraphics[scale=0.15, keepaspectratio, angle=0]{images/artist_duck} }
-\pause
-
-\item Texter aller Art
-\Put(220,-205){\includegraphics[scale=0.3, keepaspectratio, angle=0]{images/copywriter} }
-\pause
-
-\item Empfehlungssysteme
-\Put(90,230){\includegraphics[scale=0.5, keepaspectratio, angle=0]{images/robot} }
-\item \dots
-\end{itemize}
-\end{center}
-\end{minipage}%
-\begin{minipage}{0.5\textwidth}
-\vfill
-$$\quad$$
-\vfill
-\end{minipage}%
 \end{frame}
 
 \begin{frame}
@@ -203,6 +213,141 @@ Teil II:
 \end{frame}
 
 %------------------------------------------------------------------------------------
+
+\begin{frame}
+\begin{center}
+\Large
+Um genauer zu verstehen, wie das passieren kann,\\
+müssen wir kurz darüber reden, wie ML funktioniert.
+\end{center}
+\pause
+
+\Put(250,-125){\rotatebox{35}{\Large Keine Angst!}}
+\Put(250,-175){\rotatebox{35}{\Large Alles ohne Formeln!}}
+\end{frame}
+
+{
+    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/funnel}}
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+\begin{frame}
+\begin{minipage}{0.48\textwidth}
+\begin{center}
+\includegraphics[width=0.8\textwidth, keepaspectratio]{images/neuron} 
+\end{center}
+\end{minipage}\pause\begin{minipage}{0.48\textwidth}
+\begin{center}
+\includegraphics[width=0.99\textwidth, keepaspectratio]{images/perceptron} 
+\end{center}
+\end{minipage}
+\end{frame}
+
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \pause
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \pause
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
+{
+	\setbeamercolor{background canvas}{bg=LimeGreen}
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \pause
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/kangaroo}}
+    \pause
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+
+{
+	\setbeamercolor{background canvas}{bg=LimeGreen}
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/kangaroo}}
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \pause
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \pause
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+
+{
+\setbeamercolor{background canvas}{bg=OrangeRed}
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
+    \end{frame}
+}
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
+{
+    \begin{frame}[fragile]
+    \begin{center}
+    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
+    \end{center}
+    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower_1}}
+    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
+    \end{frame}
+}
+
+\begin{frame}
+\begin{center}
+\Large
+Wie passieren Fehler in ChatGPT?
+\pause
+\bigskip\bigskip
+
+ChatGPT gibt keine \emph{echten} Antworten, sondern\\ nur Statistik gepresst in die Form von Antworten!
+\end{center}
+\end{frame}
 
 \begin{frame}
 \begin{center}
@@ -393,9 +538,14 @@ Das alles wäre halb so schlimm, aber dieser Papagei macht oft Fehler \emph{und}
 \Put(50, 0){\includegraphics[width=0.75\textwidth, keepaspectratio, angle=5]{images/mashable}}
 \pause
 
-\item \dots hat enorme menschliche und umweltliche Kosten.
-\Put(90, 100){\includegraphics[width=0.9\textwidth, keepaspectratio, angle=-5]{images/time_kenya}}
+\item \dots hat enorme unsichtbare Kosten für Mensch und Umwelt.
+\Put(110, 100){\includegraphics[width=0.9\textwidth, keepaspectratio, angle=-5]{images/time_kenya}}
 \end{itemize}
+\pause\bigskip
+
+Und am Ende installiert euer Boss es doch, weil es cool und futuristisch wirkt.
+\Put(40, 100){\includegraphics[width=0.9\textwidth, keepaspectratio, angle=-2]{images/chatgpt_hallucinate_1}}
+
 \end{center}
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
@@ -410,34 +560,6 @@ $$\quad$$
 \section{End}
 
 \begin{frame}
-\begin{center}
-Zusammengefasst:\\
-Die häufigsten Fragen an Forschende (ChatFAQ):\pause
-\end{center}
-\bigskip
-
-\begin{minipage}{0.5\textwidth}
-\begin{itemize}
-\item Hat ChatGPT ein Bewusstsein?\\ Nein. Es ist nur ein Statistik-Modell.\pause\medskip
-
-\item ChatGPT = Roboter-Apokalypse?\\ Nein. Es ist nur ein Statistik-Modell.\pause\medskip
-
-\item Ist ChatGPT intelligent?\\ Weiß nicht. Was ist \glqq Intelligenz\grqq ?\pause
-\end{itemize}
-\end{minipage}%
-\begin{minipage}{0.5\textwidth}
-\begin{itemize}
-\item \glqq Größter\grqq\ Unterschied zum Menschen?\\ Kann nicht wie wir generalisieren.\pause\medskip
-
-\item Nimmt uns ChatGPT die Jobs weg?\\ Manche vielleicht. Andere schafft es.\pause\medskip
-
-\item Wie fühlst \emph{du} dich bei der Sache?\\ Gespannt auf die Zukunft!!
-\end{itemize}
-\end{minipage}
-\end{frame}
-
-
-\begin{frame}
 
 \Put(200,-467){\includegraphics[scale=0.4]{images/parrot_wing.png}}
 
@@ -449,8 +571,8 @@ Am Ende des Tages gilt für ChatGPT\dots
 \begin{center}
 \begin{itemize}
 \item Es ist kein Wesen sondern ein \emph{Produkt} in den Händen einer Firma.\pause
-\item Es hat viel Potential, als Werkzeug und als Entertainment.\pause
 \item Es ist begrenzt durch Trainingsdaten und macht Fehler mit Überzeugung.\pause
+\item Es wird oft von Menschen überschätzt (vielleicht auch von deinem Boss?).\pause
 \item Es sollte keine Verantwortung haben, die ein Papagei nicht auch übernehmen könnte.
 \end{itemize}
 \end{center}
