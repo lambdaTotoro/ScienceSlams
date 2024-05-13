@@ -57,7 +57,6 @@
     \Put(300,-180){
 	\href{https://github.com/lambdaTotoro}{\includegraphics[scale=0.125]{images/github_logo.png}}
 	\href{https://chaos.social/@lambdatotoro}{\includegraphics[scale=0.125]{images/mastodon_logo.png}}
-	\href{https://twitter.com/lambdatotoro}{\includegraphics[scale=0.125]{images/twitter_logo.png}}
     }
     \Put(230,-220){
 	\textcolor{white}{\texttt{@LambdaTotoro (@chaos.social)}}
@@ -339,9 +338,28 @@ müssen wir kurz darüber reden, wie ML funktioniert.
 }
 
 \begin{frame}
+\begin{minipage}{0.45\textwidth}
+\large
+Machine Learning Systeme kennen \emph{nur} den Datensatz, den wir ihnen gezeigt haben.
+Sie haben keinen anderen Kontext durch Welt oder Gesellschaft, wie wir Menschen.
+\bigskip
+
+Alles, was in den Trainingsdaten drin ist, wird es kennen, aber nichts darüber hinaus.
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\begin{center}
+\pause
+\includegraphics[height=0.45\textheight]{images/doomguy}
+\pause
+
+\includegraphics[height=0.45\textheight]{images/obama} 
+\end{center}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
 \begin{center}
 \Large
-Wie passieren Fehler in ChatGPT?
+Wie passieren also Fehler in ChatGPT?
 \pause
 \bigskip\bigskip
 
@@ -383,50 +401,6 @@ $$\qquad$$
 \end{center}
 
 \end{frame}
-
-{
-    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/wbw_card}}
-    \setbeamertemplate{navigation symbols}{}
-    \begin{frame}[fragile]
-    \Put(50,-70){\textpdfrender{
-		TextRenderingMode=FillStroke,
-		LineWidth=.2pt,
-		FillColor=TitleColour,
-	}{\resizebox{0.4\linewidth}{!}{Lust auf mehr?}}
-    }
-    
-    \Put(-5,-95){\textpdfrender{
-		TextRenderingMode=FillStroke,
-		LineWidth=.1pt,
-		FillColor=white,
-		StrokeColor=white,
-	}{\resizebox{0.6\linewidth}{!}{12 slammige Beiträge zu KI, Klima, Gender\dots}}
-    }
-    
-    \Put(15,-115){\textpdfrender{
-		TextRenderingMode=FillStroke,
-		LineWidth=.1pt,
-		FillColor=white,
-		StrokeColor=white,
-	}{\resizebox{0.3\linewidth}{!}{Extra viel Wissenschaft!}}
-    }
-    \Put(-15,-145){\textpdfrender{
-		TextRenderingMode=FillStroke,
-		LineWidth=.1pt,
-		FillColor=white,
-		StrokeColor=white,
-	}{\resizebox{0.65\linewidth}{!}{Das perfekte Geschenk für konservative Nervensägen!}}
-    }
-    
-    \Put(-5,-165){\textpdfrender{
-		TextRenderingMode=FillStroke,
-		LineWidth=.1pt,
-		FillColor=white,
-		StrokeColor=white,
-	}{\resizebox{0.55\linewidth}{!}{Verfügbar online, im Buchhandel und bei mir!}}
-    }
-    \end{frame} 
-}
 
 \begin{frame}
 \begin{center}
@@ -553,6 +527,12 @@ Und am Ende installiert euer Boss es doch, weil es cool und futuristisch wirkt.
 $$\quad$$
 \vfill
 \end{minipage}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Verantwortung (1979)}
+\Put(25,25){\includegraphics[scale=1.5, keepaspectratio]{images/accountable_management_p1}}
+\Put(90,-200){\includegraphics[scale=1.5, keepaspectratio]{images/accountable_management_p2}}
 \end{frame}
 
 %------------------------------------------------------------------------------------
