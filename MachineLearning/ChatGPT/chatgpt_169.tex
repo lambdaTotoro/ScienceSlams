@@ -143,7 +143,8 @@ ChatGPT\normalsize
 \medskip
 
 \begin{itemize}
-\item ChatBot-Modell: Text rein $\rightarrow$ Text raus
+\item ChatBot-Modell: Text rein $\rightarrow$ Text raus\\
+(vgl. Auto-Vervollständigung am Handy)
 \item Buzzwords:\\
 Transformer-based Large Language Model
 \item Trainiert auf großen Teilen des Internets:
@@ -211,131 +212,16 @@ Teil II:
 \Put(350,-125){\includegraphics[width=0.3\linewidth, keepaspectratio]{images/angry_duckling}}
 \end{frame}
 
-%------------------------------------------------------------------------------------
-
 \begin{frame}
 \begin{center}
 \Large
-Um genauer zu verstehen, wie das passieren kann,\\
-müssen wir kurz darüber reden, wie ML funktioniert.
-\end{center}
+Wie passieren also Fehler in ChatGPT?
 \pause
+\bigskip\bigskip
 
-\Put(250,-125){\rotatebox{35}{\Large Keine Angst!}}
-\Put(250,-175){\rotatebox{35}{\Large Alles ohne Formeln!}}
-\end{frame}
-
-{
-    \usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/funnel}}
-    \setbeamertemplate{navigation symbols}{}
-    \begin{frame}[plain]
-    \end{frame}
-}
-
-\begin{frame}
-\begin{minipage}{0.48\textwidth}
-\begin{center}
-\includegraphics[width=0.8\textwidth, keepaspectratio]{images/neuron} 
+ChatGPT gibt keine \emph{echten} Antworten, sondern\\ nur Statistik gepresst in die Form von Antworten!
 \end{center}
-\end{minipage}\pause\begin{minipage}{0.48\textwidth}
-\begin{center}
-\includegraphics[width=0.99\textwidth, keepaspectratio]{images/perceptron} 
-\end{center}
-\end{minipage}
 \end{frame}
-
-
-{
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \pause
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
-    \pause
-    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
-    \end{frame}
-}
-
-{
-	\setbeamercolor{background canvas}{bg=LimeGreen}
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
-    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
-    \end{frame}
-}
-
-
-{
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \pause
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/kangaroo}}
-    \pause
-    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
-    \end{frame}
-}
-
-
-{
-	\setbeamercolor{background canvas}{bg=LimeGreen}
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/kangaroo}}
-    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
-    \end{frame}
-}
-
-{
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \pause
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
-    \pause
-    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
-    \end{frame}
-}
-
-
-{
-\setbeamercolor{background canvas}{bg=OrangeRed}
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
-    \Put(315,160){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-down}}
-    \end{frame}
-}
-
-{
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower}}
-    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
-    \end{frame}
-}
-
-{
-    \begin{frame}[fragile]
-    \begin{center}
-    \includegraphics[scale=0.275]{images/neuralnet_transparent.png} 
-    \end{center}
-    \Put(-10,175){\includegraphics[width=0.2\textwidth, keepaspectratio]{images/sunflower_1}}
-    \Put(315,190){\includegraphics[width=0.1\textwidth, keepaspectratio]{images/thumbs-up}}
-    \end{frame}
-}
 
 \begin{frame}
 \begin{minipage}{0.45\textwidth}
@@ -356,16 +242,6 @@ Alles, was in den Trainingsdaten drin ist, wird es kennen, aber nichts darüber 
 \end{minipage}
 \end{frame}
 
-\begin{frame}
-\begin{center}
-\Large
-Wie passieren also Fehler in ChatGPT?
-\pause
-\bigskip\bigskip
-
-ChatGPT gibt keine \emph{echten} Antworten, sondern\\ nur Statistik gepresst in die Form von Antworten!
-\end{center}
-\end{frame}
 
 \begin{frame}
 \begin{center}
@@ -517,7 +393,7 @@ Das alles wäre halb so schlimm, aber dieser Papagei macht oft Fehler \emph{und}
 \end{itemize}
 \pause\bigskip
 
-Und am Ende installiert euer Boss es doch, weil es cool und futuristisch wirkt.
+Und am Ende installiert die Firma es doch, weil es cool und futuristisch wirkt.
 \Put(40, 100){\includegraphics[width=0.9\textwidth, keepaspectratio, angle=-2]{images/chatgpt_hallucinate_1}}
 
 \end{center}
@@ -530,9 +406,49 @@ $$\quad$$
 \end{frame}
 
 \begin{frame}
-\frametitle{Verantwortung (1979)}
+\frametitle{Verantwortungsdilemma (1979)}
 \Put(25,25){\includegraphics[scale=1.5, keepaspectratio]{images/accountable_management_p1}}
 \Put(90,-200){\includegraphics[scale=1.5, keepaspectratio]{images/accountable_management_p2}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Alles Schlecht?}
+
+\begin{minipage}{0.5\textwidth}
+\large
+All dies soll kein Angriff auf die Technologie allgemein darstellen!
+\bigskip
+
+Es gibt Bereiche, in denen LLMs und andere intelligente Systeme gut untergebracht sind und echtes Potential bieten: auch im sonst risikobehafteten medizinischen Bereich!
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+\vfill
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/skin_cancer_paper} 
+\end{center}
+\vfill
+\end{minipage}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Vorsicht geboten!}
+
+\begin{minipage}{0.5\textwidth}
+\large
+Aber auch unter optimalen Bedingungen dürfen wir nicht vergessen, dass KI ein 
+\emph{Werkzeug} ist, das von uns Menschen eingesetzt und geführt wird.
+\bigskip
+
+Wir dürfen nicht zu viel Verantwortung und Aufmerksamkeit an die KI abgeben, oder wir laufen Gefahr, dass wir nicht rechtzeitig merken, wenn Dinge schief laufen.
+\pause
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+\vfill
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/skin_cancer} 
+\end{center}
+\vfill
+\end{minipage}%
 \end{frame}
 
 %------------------------------------------------------------------------------------
@@ -552,7 +468,7 @@ Am Ende des Tages gilt für ChatGPT\dots
 \begin{itemize}
 \item Es ist kein Wesen sondern ein \emph{Produkt} in den Händen einer Firma.\pause
 \item Es ist begrenzt durch Trainingsdaten und macht Fehler mit Überzeugung.\pause
-\item Es wird oft von Menschen überschätzt (vielleicht auch von deinem Boss?).\pause
+\item Es wird oft von Menschen überschätzt (vielleicht auch in deiner Firma?).\pause
 \item Es sollte keine Verantwortung haben, die ein Papagei nicht auch übernehmen könnte.
 \end{itemize}
 \end{center}
@@ -576,12 +492,12 @@ $$\quad$$
 
 \begin{itemize}
 \item Bender, Gebru et al.: ``On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?'' \url{https://dl.acm.org/doi/pdf/10.1145/3442188.3445922}
-\item 11KM-Podcast (tagesschau): ``Schafft ChatGPT das Abi? (das bayerische!)'' \url{https://www.ardaudiothek.de/episode/11km-der-tagesschau-podcast/schafft-chatgpt-das-abi-das-bayerische/tagesschau/12396019/}
+\item tante: ``“AI” as support systems (for diagnostics)'' \url{https://tante.cc/2024/04/22/ai-as-support-systems-for-diagnostics/}
 \item Billy Perigo: ``OpenAI Used Kenyan Workers on Less Than $\$$2 Per Hour to Make ChatGPT Less Toxic'': \url{https://time.com/6247678/openai-chatgpt-kenya-workers/}
 \item Scobel, ``Kulturschock durch KI'': \url{https://www.3sat.de/wissen/scobel/scobel---kulturschock-durch-ki-100.html}
 \item Mutale Nkonde: ``ChatGPT: New AI system, old bias?'' \url{https://mashable.com/article/chatgpt-ai-racism-bias}
-\item Richard Waters: ``Man beats machine at Go in human victory over AI'': \url{https://arstechnica.com/information-technology/2023/02/man-beats-machine-at-go-in-human-victory-over-ai/}
-\item Max Hauptman: ``Marines outwitted an AI security camera by hiding in a cardboard box and pretending to be trees'' \url{https://taskandpurpose.com/news/marines-ai-paul-scharre/}
+\item Nicole Wheeler: ``Publication Bias is Shaping our Perceptions of AI'': \url{https://towardsdatascience.com/is-the-medias-reluctance-to-admit-ai-s-weaknesses-putting-us-at-risk-c355728e9028}
+\item Brian Christian: ``When AI flags the ruler, not the tumor — and other arguments for abolishing the black box'' \url{https://venturebeat.com/business/when-ai-flags-the-ruler-not-the-tumor-and-other-arguments-for-abolishing-the-black-box-vb-live/}
 \end{itemize}
 \end{frame}
 \end{document}
